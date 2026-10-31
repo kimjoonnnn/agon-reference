@@ -589,3 +589,40 @@ main { padding-top: var(--header-h); }
 
 /* Anything marked hidden stays hidden, even if a rule above sets display. */
 [hidden] { display: none !important; }
+
+/* ---------- Domestic marketing (its own section, near the top) ---------- */
+.domestic-lead { font-size: 19px; color: var(--ink-2); max-width: 760px; margin-bottom: 28px; }
+.domestic-kpis { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-bottom: 28px; }
+.service-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.service {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 24px 22px; display: flex; flex-direction: column; gap: 10px; min-width: 0;
+}
+.service-no { font-size: 13px; font-weight: 800; color: var(--blue); letter-spacing: .08em; }
+.service h3 { font-size: 19px; font-weight: 800; line-height: 1.35; }
+.service-sum { font-size: 15px; color: var(--ink-2); }
+.service ul, .service ol { margin: 4px 0 0; padding-left: 18px; display: grid; gap: 6px; font-size: 14px; }
+.service ol li::marker { color: var(--blue); font-weight: 700; }
+.kr-cards-lg { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; }
+.kr-cards-lg li { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 10px 14px; }
+.kr-cards-lg li:last-child:nth-child(odd) { grid-column: auto; }
+.kr-cards-lg .zoom img, .kr-cards-lg li:last-child:nth-child(odd) .zoom img { aspect-ratio: 4 / 5; }
+.kr-cards-lg b { font-size: 16px; }
+.kr-cards-lg span { font-size: 14px; }
+.kr-cards-lg em { font-size: 15px; margin-top: 4px; }
+.kr-table { margin-top: 18px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 8px 16px 12px; }
+.kr-table caption { caption-side: top; text-align: left; font-size: 14px; font-weight: 700; color: var(--ink-2); padding: 10px 0 6px; }
+@media (max-width: 1000px) {
+  .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .kr-cards-lg { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .domestic-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .kr-cards-lg { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .kr-cards-lg li:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .kr-cards-lg li:last-child:nth-child(odd) .zoom img { aspect-ratio: 16 / 9; }
+}
+@media (max-width: 560px) {
+  .service-grid { grid-template-columns: 1fr; }
+  .domestic-lead { font-size: 17px; }
+}
