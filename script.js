@@ -23,18 +23,55 @@
 
   document.querySelectorAll(".zoom").forEach(function (btn) {
     var img = btn.querySelector("img");
-    var alt = img ? img.alt : "";
-    btn.setAttribute("aria-label", alt + " 크게 보기");
-    btn.addEventListener("click", function () {
-      var src = btn.getAttribute("data-full");
-      if (!canModal) { window.open(src, "_blank"); return; }
-      lastTrigger = btn;
-      lbImg.src = src;
-      lbImg.alt = alt;
-      lbCap.textContent = alt;
-      dialog.showModal();
-    });
+    btn.setAttribute("aria-label", (img ? img.alt : "") + " 크게 보기");
   });
+  // Delegated, so zoom buttons copied into the case popup work too.
+  document.addEventListener("click", function (e) {
+    var btn = e.target.closest && e.target.closest(".zoom");
+    if (!btn) return;
+    var img = btn.querySelector("img");
+    var alt = img ? img.alt : "";
+    var src = btn.getAttribute("data-full");
+    if (!canModal) { window.open(src, "_blank"); return; }
+    lastTrigger = btn;
+    lbImg.src = src;
+    lbImg.alt = alt;
+    lbCap.textContent = alt;
+    dialog.showModal();
+  });
+
+  /* ---------- Case popup from the project list ---------- */
+  var caseModal = document.getElementById("case-modal");
+  var caseBody = document.getElementById("case-modal-body");
+  var caseTrigger = null;
+  if (caseModal && typeof caseModal.showModal === "function") {
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest('#proj-list a[href^="#case-"]');
+      if (!a) return;
+      var src = document.getElementById(a.getAttribute("href").slice(1));
+      if (!src) return;
+      e.preventDefault();
+      var copy = src.cloneNode(true);
+      // The popup shows everything at once: open the hidden details, drop the toggles and duplicate ids.
+      copy.querySelectorAll(".toggle").forEach(function (b) { b.remove(); });
+      copy.querySelectorAll("[hidden]").forEach(function (el) { el.hidden = false; });
+      copy.querySelectorAll("[id]").forEach(function (el) { el.removeAttribute("id"); });
+      copy.removeAttribute("id");
+      copy.classList.add("case-in-modal");
+      caseBody.replaceChildren(copy);
+      var title = copy.querySelector(".case-title");
+      caseModal.setAttribute("aria-label", title ? title.textContent : "사례");
+      caseTrigger = a;
+      caseModal.showModal();
+      caseBody.scrollTop = 0;
+    });
+    caseModal.querySelector(".cm-close").addEventListener("click", function () { caseModal.close(); });
+    caseModal.addEventListener("click", function (e) { if (e.target === caseModal) caseModal.close(); });
+    caseModal.addEventListener("close", function () {
+      caseBody.replaceChildren();
+      if (caseTrigger) caseTrigger.focus();
+    });
+  }
   if (canModal) {
     dialog.querySelector(".lb-close").addEventListener("click", function () { dialog.close(); });
     dialog.addEventListener("click", function (e) { if (e.target === dialog) dialog.close(); });
@@ -139,13 +176,24 @@
       current = null;
       preview.hidden = true;
     };
+    // Mouse: the photo shows only while the cursor is on a name, one at a time.
+    // Touch: a tap shows it, a tap anywhere else hides it. Keyboard: shown while the name has focus.
+    var lastPointer = "mouse";
     roster.querySelectorAll(".cr-name").forEach(function (btn) {
       btn.setAttribute("aria-expanded", "false");
-      btn.addEventListener("mouseenter", function () { show(btn); });
-      btn.addEventListener("mouseleave", hide);
-      btn.addEventListener("focus", function () { show(btn); });
-      btn.addEventListener("blur", hide);
-      btn.addEventListener("click", function () { show(btn); });
+      btn.addEventListener("pointerenter", function (e) { if (e.pointerType === "mouse") show(btn); });
+      btn.addEventListener("pointerleave", function (e) { if (e.pointerType === "mouse" && current === btn) hide(); });
+      btn.addEventListener("pointerdown", function (e) { lastPointer = e.pointerType; });
+      btn.addEventListener("focus", function () { if (btn.matches(":focus-visible")) show(btn); });
+      btn.addEventListener("blur", function () { if (current === btn && lastPointer !== "mouse") hide(); });
+      btn.addEventListener("click", function () {
+        if (lastPointer !== "mouse") show(btn);
+        lastPointer = "mouse";
+      });
+    });
+    // Safety net: if the cursor is anywhere but a name, no photo stays up.
+    document.addEventListener("mouseover", function (e) {
+      if (current && !(e.target.closest && e.target.closest(".cr-name"))) hide();
     });
     document.addEventListener("pointerdown", function (e) {
       if (!e.target.closest || !e.target.closest(".cr-name")) hide();

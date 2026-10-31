@@ -564,3 +564,25 @@ main { padding-top: var(--header-h); }
   padding: 6px 10px; font-size: 13px; font-weight: 700; text-align: center;
   background: #fff; border-top: 1px solid var(--line);
 }
+
+/* ---------- Case popup (from the project list) ---------- */
+.case-modal {
+  width: min(880px, calc(100vw - 32px)); max-height: calc(100vh - 48px);
+  padding: 0; border: 0; border-radius: var(--radius); background: #fff;
+  box-shadow: 0 24px 64px rgba(10, 20, 50, .3); overflow: hidden;
+}
+.case-modal[open] { display: flex; flex-direction: column; }
+.case-modal::backdrop { background: rgba(10, 12, 18, .6); }
+.cm-body { overflow-y: auto; overscroll-behavior: contain; padding: 28px 28px 32px; }
+.cm-close {
+  position: absolute; top: 10px; right: 10px; z-index: 2;
+  width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line);
+  background: #fff; font-size: 24px; line-height: 1; cursor: pointer; color: inherit;
+}
+.cm-close:hover { background: var(--bg-alt); }
+.case-in-modal { border: 0; padding: 0; box-shadow: none; margin: 0; }
+.case-in-modal .case-head { padding-right: 48px; }
+@media (max-width: 560px) {
+  .case-modal { width: calc(100vw - 16px); max-height: calc(100vh - 16px); }
+  .cm-body { padding: 20px 16px 24px; }
+}
