@@ -628,3 +628,24 @@ main { padding-top: var(--header-h); }
 }
 .sub-first { margin-top: 8px; }
 .hero { padding-bottom: 56px; }
+
+/* Platform logos on the domestic service cards */
+.svc-logos { list-style: none; padding: 0; margin: 2px 0 4px; display: flex; flex-wrap: wrap; gap: 8px; }
+.svc-logos li {
+  height: 44px; padding: 0 12px; display: flex; align-items: center; gap: 7px;
+  background: #fff; border: 1px solid var(--line); border-radius: 10px;
+}
+.svc-logos li img { height: 22px; width: auto; max-width: 110px; object-fit: contain; }
+.svc-logos li img[src$="musinsa.png"], .svc-logos li img[src$="gmarket.png"] { height: 30px; }
+.svc-logos .svc-icon span { font-size: 13px; font-weight: 700; color: var(--ink); }
+.service .svc-logos { margin-bottom: 2px; }
+.service ul.svc-logos { display: flex; flex-wrap: wrap; gap: 8px; padding-left: 0; margin: 2px 0 4px; }
+.svc-logos li img[src$="musinsa.png"] { height: 34px; border-radius: 4px; }
+.svc-logos li:has(img[src$="musinsa.png"]), .svc-logos li:has(img[src$="gmarket.png"]) { padding: 0 6px; }
+
+/* Brand wall: 54 logos, columns chosen so every row is full (9×6 / 6×9 / 3×18) */
+.logo-grid { grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 8px; }
+.logo-grid li { padding: 6px; }
+.logo-grid img { filter: none; opacity: 1; }
+@media (max-width: 1000px) { .logo-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .logo-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; } }
