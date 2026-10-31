@@ -106,6 +106,63 @@
     });
   }
 
+  /* ---------- Hyperz roster: photo on hover / focus / tap ---------- */
+  var preview = document.getElementById("cr-preview");
+  if (preview && roster) {
+    var pvImg = preview.querySelector("img");
+    var pvName = preview.querySelector("span");
+    var current = null;
+    var place = function (btn) {
+      var r = btn.getBoundingClientRect();
+      var w = preview.offsetWidth, h = preview.offsetHeight, gap = 12;
+      var left = r.right + gap;
+      if (left + w > window.innerWidth - 8) left = Math.max(8, r.left);
+      var top = r.top + r.height / 2 - h / 2;
+      if (left === Math.max(8, r.left)) top = r.top - h - gap; // no room on the right: show above
+      if (top < 8) top = r.bottom + gap;
+      top = Math.min(top, window.innerHeight - h - 8);
+      preview.style.left = left + "px";
+      preview.style.top = Math.max(8, top) + "px";
+    };
+    var show = function (btn) {
+      if (current && current !== btn) current.setAttribute("aria-expanded", "false");
+      current = btn;
+      btn.setAttribute("aria-expanded", "true");
+      pvImg.src = btn.getAttribute("data-photo");
+      pvImg.alt = btn.textContent + " 사진";
+      pvName.textContent = btn.textContent;
+      preview.hidden = false;
+      place(btn);
+    };
+    var hide = function () {
+      if (current) current.setAttribute("aria-expanded", "false");
+      current = null;
+      preview.hidden = true;
+    };
+    roster.querySelectorAll(".cr-name").forEach(function (btn) {
+      btn.setAttribute("aria-expanded", "false");
+      btn.addEventListener("mouseenter", function () { show(btn); });
+      btn.addEventListener("mouseleave", hide);
+      btn.addEventListener("focus", function () { show(btn); });
+      btn.addEventListener("blur", hide);
+      btn.addEventListener("click", function () { show(btn); });
+    });
+    document.addEventListener("pointerdown", function (e) {
+      if (!e.target.closest || !e.target.closest(".cr-name")) hide();
+    });
+    // Photos are small; warm them up once the list is near so the first hover is instant.
+    if ("IntersectionObserver" in window) {
+      var warm = new IntersectionObserver(function (en) {
+        if (!en[0].isIntersecting) return;
+        roster.querySelectorAll(".cr-name").forEach(function (b) { new Image().src = b.getAttribute("data-photo"); });
+        warm.disconnect();
+      }, { rootMargin: "400px" });
+      warm.observe(roster);
+    }
+    window.addEventListener("scroll", hide, { passive: true });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") hide(); });
+  }
+
   /* ---------- Current section in nav ---------- */
   var navLinks = Array.prototype.slice.call(document.querySelectorAll(".nav-list a"));
   if ("IntersectionObserver" in window && navLinks.length) {
