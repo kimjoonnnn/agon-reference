@@ -8,7 +8,6 @@
 <meta name="description" content="한국 브랜드의 일본 진출, 마케팅부터 유통까지. AGON Corp.이 맡아 온 프로젝트와 성과">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <link rel="stylesheet" href="style.css">
-<script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
 <a class="skip" href="#main">본문으로 건너뛰기</a>
@@ -18,11 +17,14 @@
     <a class="brand" href="#top">AGON Corp.</a>
     <nav aria-label="섹션 이동">
       <ul class="nav-list">
+        <li><a href="#clients">함께한 브랜드</a></li>
+        <li><a href="#about">포지셔닝</a></li>
+        <li><a href="#scope">업무 범위</a></li>
         <li><a href="#cases">대표 사례</a></li>
         <li><a href="#hyperz">하이퍼즈</a></li>
         <li><a href="#projects">전체 목록</a></li>
-        <li><a href="#about">하는 일</a></li>
-        <li><a href="#faq">질문</a></li>
+        <li><a href="#faq">자주 받는 질문</a></li>
+        <li><a href="#glossary">용어</a></li>
       </ul>
     </nav>
   </div>
@@ -30,468 +32,755 @@
 
 <main id="main">
 
-<!-- Hero -->
+<!-- 1. Hero -->
 <section class="hero" id="top" aria-labelledby="hero-title">
-  <div class="wrap hero-grid">
-    <h1 id="hero-title" class="reveal">AGON Corp.<br>프로젝트 레퍼런스</h1>
-    <div class="hero-side reveal">
-      <p class="hero-sub">한국 브랜드의 일본 진출, 마케팅부터 유통까지. 직접 맡아 온 프로젝트와 성과를 한곳에 모았습니다.</p>
-      <p class="hero-clients">MUSINSA, CJ ENM, LG생활건강, UNIX, PPIH(돈키호테 운영사), Sanrio 등 42개 브랜드·파트너와 일했습니다.</p>
-      <a class="btn" href="#cases">대표 사례 보기</a>
-    </div>
-    <figure class="hero-figure reveal">
-      <button type="button" class="zoom" data-full="assets/40-with-agon.jpg">
-        <img src="assets/40-with-agon.jpg" alt="AGON과 함께한 브랜드 로고 42개: MUSINSA, SM CULTURE &amp; CONTENTS, 대교, Speak, LG생활건강, CJ ENM, MPLAYGROUND, TikTok, UNIX, NOT4U, PPIH, Quadthera, Dinto, DION, C.L.Pharm, TRINITY, JS Cosmetic Beauty, essenciel, Medi-Balm, skim, FLOWY, MONEY BOX, Cellology, Sloom, ma:nyo, 지·유, Onlif Plastic Surgery, MEDITO, LE SHINE Clinic, Boost LAB, ergobody, 플러스에어, IZICELLBIO, MAQUIA ONLINE, SUSORO, HAIR+, BAROQUE, 메디힘, Sanrio, APLOM, ZIGTAG, ZLAB" width="1920" height="1080">
-      </button>
-      <figcaption>함께한 브랜드 (회사소개서 p.24)</figcaption>
-    </figure>
-  </div>
+  <div class="wrap">
+    <p class="eyebrow">Project Reference</p>
+    <h1 id="hero-title">AGON Corp. 프로젝트 레퍼런스</h1>
+    <p class="hero-sub">한국 브랜드의 일본 진출, 마케팅부터 유통까지</p>
+    <p class="hero-note">직접 맡아 온 프로젝트와 성과를 한곳에 모았습니다.</p>
 
-  <div class="kpi-band" aria-labelledby="kpi-title">
-    <div class="wrap">
-      <h2 id="kpi-title" class="kpi-band-title reveal">대표 성과</h2>
-      <ul class="kpi-hero">
-        <li class="reveal">
-          <strong class="kpi-num">600%</strong>
-          <span class="kpi-label">2년 만에 유통금액 증가</span>
-          <span class="kpi-case">JOVS 제모기 유통 · 2024년 일본 온라인 점유율 1위</span>
-        </li>
-        <li class="reveal">
-          <strong class="kpi-num">400개 지점</strong>
-          <span class="kpi-label">돈키호테 유통</span>
-          <span class="kpi-case">UNIX TAKEOUT 미용가전 · 초도 매입 4만 개</span>
-        </li>
-        <li class="reveal">
-          <strong class="kpi-num">실시간 1위</strong>
-          <span class="kpi-label">런칭 2개월 만에 큐텐 탑페이지</span>
-          <span class="kpi-case">ESSENCIEL 세럼 · 뷰티 종합 4위, 미용액 카테고리 1위</span>
-        </li>
-        <li class="reveal">
-          <strong class="kpi-num">1,500개 완판</strong>
-          <span class="kpi-label">첫 메가와리 초기 물량</span>
-          <span class="kpi-case">Wooliliwoo 큐텐 대행 · 세 번째 메가와리 뷰티 종합 14위</span>
-        </li>
-        <li class="reveal">
-          <strong class="kpi-num">카테고리 1위</strong>
-          <span class="kpi-label">큐텐 미용기기, 2024년 11월</span>
-          <span class="kpi-case">CELLOLOGY 미용기기 · 한국 피부과·약국 입점을 레퍼런스로 활용</span>
-        </li>
-        <li class="reveal">
-          <strong class="kpi-num">8,000명 이상</strong>
-          <span class="kpi-label">KCON 2024 부스 방문</span>
-          <span class="kpi-case">INTOU 색조 브랜드 · 인스타그램 팔로워 4,000명 증가</span>
-        </li>
-      </ul>
-    </div>
+    <h2 class="kpi-title">대표 성과</h2>
+    <ul class="kpi-grid kpi-hero">
+      <li class="kpi">
+        <span class="kpi-case">JOVS · 제모기 유통</span>
+        <strong class="kpi-num">600%</strong>
+        <span class="kpi-label">2년 만에 유통금액 증가</span>
+        <span class="kpi-sub">2024년 일본 온라인 점유율 1위</span>
+      </li>
+      <li class="kpi">
+        <span class="kpi-case">UNIX TAKEOUT · 미용가전 유통</span>
+        <strong class="kpi-num">400개 지점</strong>
+        <span class="kpi-label">돈키호테 유통</span>
+        <span class="kpi-sub">초도 매입 4만 개</span>
+      </li>
+      <li class="kpi">
+        <span class="kpi-case">ESSENCIEL · 큐텐 대행·마케팅</span>
+        <strong class="kpi-num">실시간 1위</strong>
+        <span class="kpi-label">런칭 2개월 만에 큐텐 탑페이지</span>
+        <span class="kpi-sub">뷰티 종합 4위, 미용액 카테고리 1위</span>
+      </li>
+      <li class="kpi">
+        <span class="kpi-case">Wooliliwoo · 큐텐 대행</span>
+        <strong class="kpi-num">1,500개 완판</strong>
+        <span class="kpi-label">첫 메가와리 초기 물량</span>
+        <span class="kpi-sub">세 번째 메가와리 큐텐 뷰티 종합 14위</span>
+      </li>
+      <li class="kpi">
+        <span class="kpi-case">CELLOLOGY · 미용기기 마케팅</span>
+        <strong class="kpi-num">카테고리 1위</strong>
+        <span class="kpi-label">큐텐 미용기기, 2024년 11월</span>
+        <span class="kpi-sub">한국 피부과·약국 입점을 레퍼런스로 활용</span>
+      </li>
+      <li class="kpi">
+        <span class="kpi-case">KCON 2024 · INTOU 부스</span>
+        <strong class="kpi-num">8,000명 이상</strong>
+        <span class="kpi-label">부스 방문</span>
+        <span class="kpi-sub">브랜드 인스타그램 팔로워 4,000명 증가</span>
+      </li>
+    </ul>
+    <p class="source">출처: 회사소개서</p>
   </div>
 </section>
 
-
-<!-- 대표 사례 -->
-<section class="section cases" id="cases" aria-labelledby="cases-title">
+<!-- 2. 함께한 브랜드 -->
+<section class="section" id="clients" aria-labelledby="clients-title">
   <div class="wrap">
-    <div class="section-head reveal">
-      <h2 id="cases-title">대표 사례</h2>
-      <p>사례마다 성과를 먼저 보여 드립니다. 배경과 한 일은 펼쳐서 볼 수 있고, 슬라이드는 누르면 크게 보입니다.</p>
-    </div>
-    <nav class="case-jump" aria-label="사례 분야">
-      <a href="#cat-dist">일본 유통</a>
-      <a href="#cat-qoo">큐텐 운영</a>
-      <a href="#cat-sns">인플루언서·SNS</a>
-      <a href="#cat-pr">PR·오프라인</a>
-      <a href="#cat-kr">국내 마케팅</a>
-    </nav>
-
-    <!-- 일본 유통 -->
-    <h3 class="cat-title reveal" id="cat-dist">일본 유통</h3>
-
-    <article class="case reveal" id="case-jovs">
-      <div class="case-text">
-        <h4 class="case-title">JOVS: 오프라인 입점으로 온라인 1위까지</h4>
-        <ul class="case-kpis">
-          <li><strong>600%</strong><span>2년 만에 유통금액 증가</span></li>
-          <li><strong>1위</strong><span>2024년 일본 온라인 점유율</span></li>
-          <li><strong>약 1,000곳</strong><span>2024년 매장 수 (2022년 300곳)</span></li>
-        </ul>
-        <p class="case-tag">일본 유통 · 제모기</p>
-        <ul class="case-results">
-          <li>2022년 온라인 점유율 TOP10 밖에서 2024년 온라인 1위·오프라인 4위로</li>
-          <li>판매 시작 1년 만에 라쿠텐·야후 등 판매량 1위, 라쿠텐 랭킹 15관왕, 라쿠텐 SHOP OF THE MONTH 수상</li>
-          <li>2024년 제모기 시장 점유율 18%, 2023년 매출 40억 엔</li>
-          <li>2024년 일본 내 유통 총액 약 40억 엔 이상</li>
-        </ul>
-        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-jovs">배경·한 일 보기</button>
-        <div class="more" id="more-jovs">
-          <p><b>배경</b> 제모기 브랜드 JOVS의 일본 유통.</p>
-          <p><b>한 일</b> 요도바시카메라·빅카메라·야마다·돈키호테 등 양판점과 버라이어티숍 입점을 넓혔습니다. 일본은 오프라인 매장이 늘면 온라인 매출도 함께 오르는 시장이라는 걸 보여 준 사례입니다.</p>
-        </div>
-        <p class="source">출처: 회사소개서(2025 초판) p.10~11</p>
-      </div>
-      <div class="case-media">
-        <button type="button" class="zoom" data-full="assets/11-jovs-detail.jpg"><img src="assets/11-jovs-detail.jpg" alt="JOVS 매장 수와 점유율 변화 그래프, 입점처" width="1920" height="1080" loading="lazy"></button>
-        <button type="button" class="zoom" data-full="assets/10-jovs-overview.jpg"><img src="assets/10-jovs-overview.jpg" alt="JOVS 일본 유통 개요" width="1920" height="1080" loading="lazy"></button>
-      </div>
-    </article>
-
-    <article class="case reveal" id="case-unix">
-      <div class="case-text">
-        <h4 class="case-title">UNIX TAKEOUT: 돈키호테 400개 지점 유통</h4>
-        <ul class="case-kpis">
-          <li><strong>400개 지점</strong><span>돈키호테 입점</span></li>
-          <li><strong>4만 개</strong><span>초도 매입</span></li>
-          <li><strong>156만</strong><span>구독자 뷰티 유튜버 등 메가급 인플루언서</span></li>
-        </ul>
-        <p class="case-tag">일본 유통 · 미용가전</p>
-        <ul class="case-results">
-          <li>2025년, 한국 가전 브랜드 UNIX의 TAKEOUT 시리즈를 일본 돈키호테에 유통</li>
-          <li>초도 마케팅 규모 2억 원, 156만·35만 뷰티 유튜버 등 메가급 인플루언서 활용</li>
-          <li>2026년 TAKEOUT 다음 시리즈 진출 예정 (소개서 작성 시점의 계획)</li>
-        </ul>
-        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-unix">한 일 보기</button>
-        <div class="more" id="more-unix">
-          <p>패키지 번역부터 물류까지 유통 전 과정을 총괄하고, 런칭 시점에 맞춰 메가급 유튜버·틱톡커 마케팅을 집행했습니다. 공식 모델 섭외와 촬영은 <a href="#case-agency">AGON AGENCY 사례</a>에 정리했습니다.</p>
-        </div>
-        <p class="source">출처: 회사소개서 p.9, p.16</p>
-      </div>
-      <div class="case-media">
-        <button type="button" class="zoom" data-full="assets/22-unix-influencer-crop.jpg"><img src="assets/22-unix-influencer-crop.jpg" alt="UNIX TAKEOUT을 소개하는 156만·35만 뷰티 유튜버 등 인플루언서 영상" width="760" height="790" loading="lazy"></button>
-      </div>
-    </article>
-
-    <article class="case reveal" id="case-network">
-      <div class="case-text">
-        <h4 class="case-title">가전·버라이어티 매장 3,000곳 유통망과 대량 입점</h4>
-        <ul class="case-kpis">
-          <li><strong>2,000곳</strong><span>가전 대형 매장</span></li>
-          <li><strong>1,000곳</strong><span>버라이어티 스토어</span></li>
-          <li><strong>약 6,500개</strong><span>헤어 고데기 입점 점포</span></li>
-        </ul>
-        <p class="case-tag">일본 유통 · 오프라인 유통망</p>
-        <ul class="case-results">
-          <li><b>중국 선전 제조 제모기</b>: 전국 약 600개 점포 입점, 돈키호테 그룹 주력 상품으로 전개</li>
-          <li><b>한국 헤어 고데기</b>: 전국 약 6,500개 점포 입점, 일본 상륙 첫 회 3만 대 납품</li>
-        </ul>
-        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-network">유통망 보기</button>
-        <div class="more" id="more-network">
-          <p><b>가전 대형 매장</b> 요도바시카메라, 빅카메라, EDION, 야마다, 케즈덴키, 노지마, 코지마, AEON 등</p>
-          <p><b>버라이어티 스토어</b> LOFT, PLAZA, HANDS, @cosme, 돈키호테, 하비타 등</p>
-        </div>
-        <p class="source">출처: 회사소개서 p.10~11</p>
-      </div>
-      <div class="case-media">
-        <button type="button" class="zoom" data-full="assets/14-offline-cases.jpg"><img src="assets/14-offline-cases.jpg" alt="오프라인 매장 입점 사례 두 건의 매장 진열 사진" width="1920" height="1080" loading="lazy"></button>
-        <button type="button" class="zoom" data-full="assets/13-distribution-network.jpg"><img src="assets/13-distribution-network.jpg" alt="일본 가전·버라이어티 유통망" width="1920" height="1080" loading="lazy"></button>
-      </div>
-    </article>
-
-    <!-- 큐텐 -->
-    <h3 class="cat-title reveal" id="cat-qoo">큐텐(Qoo10) 운영</h3>
-
-    <article class="case reveal" id="case-essenciel">
-      <div class="case-text">
-        <h4 class="case-title">ESSENCIEL: 런칭 2개월 만에 큐텐 탑페이지 1위</h4>
-        <ul class="case-kpis">
-          <li><strong>실시간 1위</strong><span>큐텐 탑페이지</span></li>
-          <li><strong>4위</strong><span>큐텐 뷰티 종합</span></li>
-          <li><strong>200건 이상</strong><span>매월 인플루언서 시딩</span></li>
-        </ul>
-        <p class="case-tag">큐텐 대행·마케팅 · 세럼</p>
-        <ul class="case-results">
-          <li>브랜드 런칭 2개월 만에 큐텐 탑페이지 실시간 1위, 뷰티 종합 4위</li>
-          <li>미용액 카테고리 1위, 세럼 카테고리 2위</li>
-          <li>매월 200건 이상 대량 시딩 (목표: '한국 세럼'으로서의 6개월 포지셔닝)</li>
-        </ul>
-        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-essenciel">배경·한 일 보기</button>
-        <div class="more" id="more-essenciel">
-          <p><b>배경</b> 한국 세럼 브랜드 에센시엘(ESSENCIEL)의 일본 첫 진출. 2025년 6월 대행을 시작해 8월 5일 큐텐 메가데뷔를 진행했습니다.</p>
-          <p><b>한 일</b> 큐텐 운영 대행과 마케팅 기획·집행을 총괄했습니다. 매월 200건 이상 시딩으로 브랜드 인지도를 만들었습니다.</p>
-        </div>
-        <p class="source">출처: 회사소개서 p.13, p.17 / 노션 업무 기록</p>
-      </div>
-      <div class="case-media">
-        <button type="button" class="zoom" data-full="assets/30-essenciel-qoo10.jpg"><img src="assets/30-essenciel-qoo10.jpg" alt="ESSENCIEL 큐텐 탑페이지 1위와 미용액 카테고리 1위 화면" width="1600" height="900" loading="lazy"></button>
-        <button type="button" class="zoom" data-full="assets/23-essential-seeding.jpg"><img src="assets/23-essential-seeding.jpg" alt="ESSENCIEL 월간 200건 이상 시딩" width="1600" height="900" loading="lazy"></button>
-      </div>
-    </article>
-
-    <article class="case reveal" id="case-cellology">
-      <div class="case-text">
-        <h4 class="case-title">CELLOLOGY: 한국 병의원 입점을 레퍼런스로 큐텐 1위</h4>
-        <ul class="case-kpis">
-          <li><strong>1위</strong><span>큐텐 미용기기 카테고리, 2024년 11월</span></li>
-        </ul>
-        <p class="case-tag">큐텐 마케팅 · 미용기기</p>
-        <ul class="case-results">
-          <li>셀올로지 미용기기를 강남 피부과와 송파 약국에 입점시키고, 이를 일본 마케팅 레퍼런스로 활용</li>
-          <li>2024년 11월 큐텐 미용기기 카테고리 1위 달성</li>
-        </ul>
-        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-cellology">한 일 보기</button>
-        <div class="more" id="more-cellology">
-          <p>일본 마케팅 방향을 '일본 SNS에 정보 쌓기'로 잡고, 기기 성능을 알리는 정보성 콘텐츠를 만들어 발행했습니다.</p>
-        </div>
-        <p class="source">출처: 회사소개서 p.20</p>
-      </div>
-      <div class="case-media">
-        <button type="button" class="zoom" data-full="assets/31-cellology.jpg"><img src="assets/31-cellology.jpg" alt="CELLOLOGY 피부과·약국 입점 사진과 큐텐 미용기기 카테고리 1위" width="1600" height="900" loading="lazy"></button>
-      </div>
-    </article>
-
-    <article class="case reveal" id="case-wooliliwoo">
-      <div class="case-text">
-        <h4 class="case-title">Wooliliwoo: 큐텐 대행과 트위터 마케팅으로 완판</h4>
-        <ul class="case-kpis">
-          <li><strong>1,500개</strong><span>첫 메가와리 초기 물량 완판</span></li>
-          <li><strong>14위</strong><span>세 번째 메가와리 큐텐 뷰티 종합</span></li>
-          <li><strong>1,600만 엔</strong><span>세 번째 메가와리 매출</span></li>
-        </ul>
-        <p class="case-tag">큐텐 대행 · 트위터 마케팅</p>
-        <ul class="case-results">
-          <li>첫 메가와리에서 초기 물량 1,500개 완판 (두 번째 메가와리 때는 재고 없음)</li>
-          <li>큐텐 판매량 그래프(소개서 p.15) 기준: 2022년 5월 런칭 → 기본 시딩 6개월 → 2022년 11월 메가와리 집중 마케팅, 재고 전량 소진</li>
-        </ul>
-        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-wooliliwoo">한 일 보기</button>
-        <div class="more" id="more-wooliliwoo">
-          <p>큐텐 대행과 마케팅 기획·집행을 총괄했습니다. 트위터 마케팅으로 초기 수요를 만들고, 메가와리(큐텐 대형 할인 행사)에 마케팅을 집중했습니다.</p>
-        </div>
-        <p class="source">출처: 회사소개서 p.14~15</p>
-      </div>
-      <div class="case-media">
-        <button type="button" class="zoom" data-full="assets/21-wooliliwoo-graph.jpg"><img src="assets/21-wooliliwoo-graph.jpg" alt="큐텐 판매량 그래프, 2022년 5월~11월" width="1920" height="1080" loading="lazy"></button>
-        <button type="button" class="zoom" data-full="assets/20-wooliliwoo.jpg"><img src="assets/20-wooliliwoo.jpg" alt="Wooliliwoo 큐텐 대행 및 마케팅" width="1920" height="1080" loading="lazy"></button>
-      </div>
-    </article>
-
-    <article class="case reveal" id="case-zigtag">
-      <div class="case-text">
-        <h4 class="case-title">ZIGTAG: 메가와리 데이터로 다음 판매 전략 세우기</h4>
-        <ul class="case-kpis">
-          <li><strong>325,265엔</strong><span>2025년 8월 31일~9월 12일 메가와리 매출</span></li>
-          <li><strong>70% 이상</strong><span>상위 3개 상품의 매출 비중</span></li>
-        </ul>
-        <p class="case-tag">큐텐 운영 대행 · 스킨케어</p>
-        <ul class="case-results">
-          <li>주문 60건(상품 134개), 총 PV 2,979, ROAS 263.80 (리포트 표기 그대로)</li>
-          <li>타임세일은 17~24시에 가장 많이 팔렸고, 이 시간대 구매 전환율도 높았음</li>
-        </ul>
-        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-zigtag">이어서 한 일 보기</button>
-        <div class="more" id="more-zigtag">
-          <p><b>배경</b> 한국 스킨케어 브랜드의 큐텐 운영 대행. 2025년 6월 킥오프.</p>
-          <p><b>이어서 한 일</b> 검색 키워드('이너드라이', '남성', '모공')를 분석해 상세페이지·세트 구성 개선안을 냈고, 메가와리 전후 구매 공백을 고려한 11월 메가와리 판촉 스케줄(일본어)을 작성했습니다.</p>
-        </div>
-        <p class="source">출처: 노션 'ZIGTAG 메가와리 리포트'</p>
-      </div>
-    </article>
-
-    <!-- 인플루언서·SNS -->
-    <h3 class="cat-title reveal" id="cat-sns">인플루언서·SNS 마케팅</h3>
-
-    <article class="case reveal" id="case-dinto">
-      <div class="case-text">
-        <h4 class="case-title">Dinto: 인플루언서와 함께 판 2일</h4>
-        <ul class="case-kpis">
-          <li><strong>4,300만 원</strong><span>2일 매출</span></li>
-          <li><strong>1,556개</strong><span>세트 판매</span></li>
-          <li><strong>4,500개</strong><span>립스틱 판매</span></li>
-        </ul>
-        <p class="case-tag">인플루언서 × 큐텐 콜라보 · 색조</p>
-        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-dinto">한 일 보기</button>
-        <div class="more" id="more-dinto">
-          <p>일본 연휴 기간에 맞춰 인플루언서와 큐텐 공동 판매를 진행했습니다. 일본인이 좋아하는 세트로 전 컬러를 다시 구성하고 상세페이지를 만들었습니다.</p>
-        </div>
-        <p class="source">출처: 회사소개서 p.19</p>
-      </div>
-      <div class="case-media">
-        <button type="button" class="zoom" data-full="assets/24-dinto-collab.jpg"><img src="assets/24-dinto-collab.jpg" alt="Dinto 인플루언서 콜라보 판매" width="1920" height="1080" loading="lazy"></button>
-      </div>
-    </article>
-
-    <article class="case reveal" id="case-not4u">
-      <div class="case-text">
-        <h4 class="case-title">NOT4U: LOFT 입점일에 맞춘 SNS 캠페인</h4>
-        <ul class="case-kpis">
-          <li><strong>41만 회</strong><span>매체 조회만으로</span></li>
-          <li><strong>6,262회</strong><span>저장</span></li>
-        </ul>
-        <p class="case-tag">SNS·매체 마케팅 · 바디미스트</p>
-        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-not4u">한 일 보기</button>
-        <div class="more" id="more-not4u">
-          <p>자체 DB의 마이크로급 트위터·틱톡 인플루언서를 쓰고, 뷰티 매체 홍보로 신뢰도를 더했습니다.</p>
-        </div>
-        <p class="source">출처: 회사소개서 p.21</p>
-      </div>
-      <div class="case-media">
-        <button type="button" class="zoom" data-full="assets/25-not4u.jpg"><img src="assets/25-not4u.jpg" alt="NOT4U 바디미스트 SNS 마케팅" width="1920" height="1080" loading="lazy"></button>
-      </div>
-    </article>
-
-    <article class="case reveal" id="case-himari">
-      <div class="case-text">
-        <h4 class="case-title">히마리 × 부엉이산장: 일본 인플루언서의 연남동 홍보</h4>
-        <ul class="case-kpis">
-          <li><strong>약 6.6만</strong><span>X 게시물 조회 (게시 22시간 후)</span></li>
-          <li><strong>약 3.6만</strong><span>인스타그램 릴스 조회</span></li>
-        </ul>
-        <p class="case-tag">일본 인플루언서 × 서울 식당</p>
-        <ul class="case-results">
-          <li>2025년 5월, X 게시물 좋아요 597·저장 219</li>
-        </ul>
-        <p class="source">출처: 노션 업무 기록</p>
-      </div>
-    </article>
-
-    <!-- PR·오프라인 -->
-    <h3 class="cat-title reveal" id="cat-pr">PR·오프라인·퍼포먼스</h3>
-
-    <article class="case reveal" id="case-kcon">
-      <div class="case-text">
-        <h4 class="case-title">KCON 2024: INTOU 부스 운영</h4>
-        <ul class="case-kpis">
-          <li><strong>8,000명 이상</strong><span>부스 방문 (CJ 측 자료)</span></li>
-          <li><strong>4,000명</strong><span>브랜드 인스타그램 팔로워 증가</span></li>
-        </ul>
-        <p class="case-tag">오프라인 페스티벌 · 색조</p>
-        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-kcon">한 일 보기</button>
-        <div class="more" id="more-kcon">
-          <p>2024 CJ KCON 페스티벌에서 CJ KCON 팀과의 소통, 현지 부스 설치, SNS 인플루언서 마케팅을 총괄했습니다.</p>
-        </div>
-        <p class="source">출처: 회사소개서 p.23</p>
-      </div>
-      <div class="case-media">
-        <button type="button" class="zoom" data-full="assets/27-kcon-intou.jpg"><img src="assets/27-kcon-intou.jpg" alt="KCON 2024 INTOU 부스 현장" width="1920" height="1080" loading="lazy"></button>
-      </div>
-    </article>
-
-    <article class="case reveal" id="case-maquia">
-      <div class="case-text">
-        <h4 class="case-title">MAQUIA: '2025 한국 트렌드 베스트5' 지면 게재</h4>
-        <ul class="case-kpis">
-          <li><strong>베스트5</strong><span>기획 지면에 클라이언트 제품 게재</span></li>
-          <li><strong>약 11.3만 부</strong><span>MAQUIA 월 발행 부수</span></li>
-        </ul>
-        <p class="case-tag">매거진 PR</p>
-        <ul class="case-results">
-          <li>2025년 2월 20일 게재. 담당 에디터 등 기존 매체 인프라로 성사시키고, 게재 이력의 2차 활용까지 지원</li>
-        </ul>
-        <p class="source">출처: 회사소개서 p.18 · 원본이 대외비라 이미지와 브랜드명은 싣지 않았습니다</p>
-      </div>
-    </article>
-
-    <article class="case reveal" id="case-clinic">
-      <div class="case-text">
-        <h4 class="case-title">병의원 도쿄 현지 상담회: 메타광고 + 인플루언서</h4>
-        <ul class="case-kpis">
-          <li><strong>50명</strong><span>상담회 하루 평균 모객</span></li>
-          <li><strong>659.85원</strong><span>CPC, '성형' 카테고리 기준 효율적인 수준</span></li>
-        </ul>
-        <p class="case-tag">퍼포먼스 마케팅 · 병의원</p>
-        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-clinic">한 일 보기</button>
-        <div class="more" id="more-clinic">
-          <p>도쿄에서 연 병의원 현지 상담회를 위해 일본 타깃 메타광고를 집행하고, 인플루언서로 상담회를 미리 알렸습니다.</p>
-        </div>
-        <p class="source">출처: 회사소개서 p.22</p>
-      </div>
-      <div class="case-media">
-        <button type="button" class="zoom" data-full="assets/26-clinic-tokyo.jpg"><img src="assets/26-clinic-tokyo.jpg" alt="병의원 도쿄 현지 상담회 메타광고와 인플루언서 홍보" width="1920" height="1080" loading="lazy"></button>
-      </div>
-    </article>
-
-    <article class="case reveal" id="case-popup">
-      <div class="case-text">
-        <h4 class="case-title">성수 팝업스토어 운영: APLOM, SKIM</h4>
-        <ul class="case-kpis">
-          <li><strong>30명</strong><span>SKIM 팝업 체험단</span></li>
-        </ul>
-        <p class="case-tag">팝업스토어 · 일본 브랜드의 한국 진출</p>
-        <ul class="case-results">
-          <li><b>APLOM</b>: 일본 발레 라이프스타일 브랜드의 성수 팝업(11월 21~24일). 인스타그램 체험단 모집, 포스팅 가이드 운영, 고객 후기 수집</li>
-          <li><b>SKIM</b>: 성수 팝업스토어 VP존·포토존 구성과 체험단 운영</li>
-          <li><b>10월 POPUP</b>: 한국 팝업 출전을 원한 일본 스킨케어 거래처를 상담하고 성수·압구정 일대 공간을 찾음</li>
-        </ul>
-        <p class="source">출처: 노션 업무 기록</p>
-      </div>
-    </article>
-
-    <!-- 국내 마케팅 -->
-    <h3 class="cat-title reveal" id="cat-kr">국내 마케팅</h3>
-    <p class="cat-lead reveal">한국 시장에서는 올리브영·무신사·쿠팡·네이버 리뷰 체험단, 네이버 검색광고·메타광고, 모델 에이전시와 인플루언서 마케팅을 맡습니다.</p>
-
-    <article class="case reveal" id="case-agency">
-      <div class="case-text">
-        <h4 class="case-title">AGON AGENCY × UNIX: TAKEOUT 공식 모델 섭외와 촬영</h4>
-        <p class="case-tag">모델 에이전시 · 미용가전</p>
-        <ul class="case-results">
-          <li>UNIX TAKEOUT 4.5 시리즈의 공식 모델로, 모델 레퍼런스가 많은 메가급 인플루언서를 섭외</li>
-          <li>촬영 콘티 작성부터 촬영까지 총괄</li>
-        </ul>
-        <p class="source">출처: 국내 마케팅 제안서 p.9</p>
-      </div>
-      <div class="case-media">
-        <button type="button" class="zoom" data-full="assets/50-agency-unix.jpg"><img src="assets/50-agency-unix.jpg" alt="AGON AGENCY와 UNIX TAKEOUT 모델 촬영" width="1600" height="900" loading="lazy"></button>
-      </div>
-    </article>
-
-    <article class="case reveal" id="case-kr-influencer">
-      <div class="case-text case-text-wide">
-        <h4 class="case-title">국내 인플루언서 캠페인 5건</h4>
-        <p class="case-tag">인플루언서 마케팅 · 국내</p>
-        <div class="table-wrap">
-          <table class="data-table">
-            <caption class="sr-only">국내 인플루언서 캠페인별 참여 인플루언서 팔로워, 좋아요, 도달, 도달당 비용</caption>
-            <thead>
-              <tr><th scope="col">브랜드 · 캠페인</th><th scope="col">총 팔로워</th><th scope="col">총 좋아요</th><th scope="col">총 도달</th><th scope="col">도달당 비용</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row"><b>plentyplant</b> 와디즈 펀딩 9120% 달성 더마코스메틱 제품 리뷰</th><td data-label="총 팔로워">288,671</td><td data-label="총 좋아요">16,566</td><td data-label="총 도달">119,950</td><td data-label="도달당 비용">37원</td></tr>
-              <tr><th scope="row"><b>MUSINSA</b> 무신사 테라스 20대 인플루언서 방문 리뷰</th><td data-label="총 팔로워">424,161</td><td data-label="총 좋아요">15,011</td><td data-label="총 도달">152,960</td><td data-label="도달당 비용">35원</td></tr>
-              <tr><th scope="row"><b>서울특별시</b> '서울시가 묻습니다' 투표 이벤트 바이럴</th><td data-label="총 팔로워">198,112</td><td data-label="총 좋아요">13,430</td><td data-label="총 도달">90,152</td><td data-label="도달당 비용">14원</td></tr>
-              <tr><th scope="row"><b>Fitāmin</b> 추천인 코드로 고객 확보, 영양제 구독 서비스 리뷰</th><td data-label="총 팔로워">357,200</td><td data-label="총 좋아요">10,458</td><td data-label="총 도달">137,766</td><td data-label="도달당 비용">275원</td></tr>
-              <tr><th scope="row"><b>건강기능식품</b> 쿠팡 식이섬유 분야 1위, 운동 인플루언서 추천</th><td data-label="총 팔로워">10,237</td><td data-label="총 좋아요">399,143</td><td data-label="총 도달">117,815</td><td data-label="도달당 비용">23원</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="source">출처: 국내 마케팅 제안서 p.10~11 (수치는 원문 표기 그대로)</p>
-      </div>
-      <div class="case-media case-media-row">
-        <button type="button" class="zoom" data-full="assets/51-kr-influencer-1.jpg"><img src="assets/51-kr-influencer-1.jpg" alt="국내 인플루언서 마케팅 레퍼런스: plentyplant, MUSINSA" width="1600" height="900" loading="lazy"></button>
-        <button type="button" class="zoom" data-full="assets/52-kr-influencer-2.jpg"><img src="assets/52-kr-influencer-2.jpg" alt="국내 인플루언서 마케팅 레퍼런스: 서울특별시, Fitāmin, 건강기능식품" width="1600" height="900" loading="lazy"></button>
-      </div>
-    </article>
+    <p class="eyebrow">With AGON</p>
+    <h2 id="clients-title">함께한 브랜드</h2>
+    <p>뷰티·미용가전 브랜드를 중심으로 병의원, 교육, 엔터테인먼트까지 42개 브랜드·파트너와 일했습니다.</p>
+    <ul class="logo-grid">
+      <li><img src="img/logos/logo-00.png" alt="MUSINSA" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-01.png" alt="SM CULTURE &amp; CONTENTS" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-02.png" alt="대교" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-03.png" alt="Speak" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-04.png" alt="LG생활건강" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-05.png" alt="CJ ENM" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-06.png" alt="MPLAYGROUND" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-07.png" alt="TikTok" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-08.png" alt="UNIX" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-09.png" alt="NOT4U" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-10.png" alt="PPIH (돈키호테 운영사)" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-11.png" alt="Quadthera" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-12.png" alt="Dinto" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-13.png" alt="DION" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-14.png" alt="C.L.Pharm" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-15.png" alt="TRINITY" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-16.png" alt="JS Cosmetic Beauty" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-17.png" alt="essenciel" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-18.png" alt="Medi-Balm" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-19.png" alt="skim" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-20.png" alt="FLOWY" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-21.png" alt="MONEY BOX" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-22.png" alt="Cellology" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-23.png" alt="Sloom" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-24.png" alt="ma:nyo" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-25.png" alt="지·유" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-26.png" alt="Onlif Plastic Surgery" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-27.png" alt="MEDITO" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-28.png" alt="LE SHINE Clinic" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-29.png" alt="Boost LAB" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-30.png" alt="ergobody" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-31.png" alt="플러스에어 Plus air" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-32.png" alt="IZICELLBIO" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-33.png" alt="MAQUIA ONLINE" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-34.png" alt="SUSORO" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-35.png" alt="HAIR+" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-36.png" alt="BAROQUE" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-37.png" alt="메디힘" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-38.png" alt="Sanrio (Hello Kitty)" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-39.png" alt="APLOM" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-40.png" alt="ZIGTAG" width="230" height="140" loading="lazy"></li>
+      <li><img src="img/logos/logo-41.png" alt="ZLAB" width="230" height="140" loading="lazy"></li>
+    </ul>
+    <p class="source">출처: 회사소개서 p.24</p>
   </div>
 </section>
 
-<!-- 하이퍼즈 -->
-<section class="section hyperz" id="hyperz" aria-labelledby="hyperz-title">
+<!-- 3. About / 포지셔닝 -->
+<section class="section alt" id="about" aria-labelledby="about-title">
   <div class="wrap">
-    <div class="hyperz-top">
-      <div class="hyperz-text reveal">
-        <h2 id="hyperz-title">하이퍼즈 유니버스</h2>
-        <p class="hyperz-lead">AGON이 함께 운영한 크리에이터 그룹입니다. 한국·일본·베트남·러시아 크리에이터와 함께 트렌드와 알고리즘을 읽고, 크리에이터에게는 성장의 길을, 브랜드에게는 믿을 수 있는 연결을 만듭니다.</p>
-        <ul class="hyperz-kpis">
-          <li><strong>38명</strong><span>소개서에 실린 크리에이터</span></li>
-          <li><strong>4개국</strong><span>한국 14 · 일본 9 · 베트남 13 · 러시아 2</span></li>
-          <li><strong>510만</strong><span>최대 팔로워 (TikTok)</span></li>
+    <p class="eyebrow">About</p>
+    <h2 id="about-title">일본 진출 전 과정을 한 팀에서</h2>
+    <div class="lead">
+      <p>AGON Corp.(아곤코퍼레이션)은 <strong>한국 브랜드가 일본 시장에 진출하는 전 과정</strong>을 맡는 회사입니다.</p>
+      <p>큐텐(Qoo10) 운영 대행이나 인플루언서 마케팅 같은 <strong>초기 마케팅</strong>부터, 돈키호테·가전 양판점 같은 <strong>대형 오프라인 유통 입점</strong>까지 한 팀에서 진행합니다.</p>
+    </div>
+
+    <h3 class="sub-title">포지셔닝</h3>
+    <div class="about-grid">
+      <div>
+        <p>일본 진출 대행사는 보통 한 영역에 집중합니다.</p>
+        <ul class="type-grid">
+          <li><strong>초기 마케팅사</strong><span>큐텐 대행·시딩·인플루언서·SNS 운영 대행</span></li>
+          <li><strong>PR·팝업 운영사</strong><span>언론 PR·팝업스토어·소규모 매장 운영</span></li>
+          <li><strong>이커머스 전개사</strong><span>아마존 등 현지 창고가 필요한 이커머스 전개</span></li>
+          <li><strong>벤더사</strong><span>대규모 유통</span></li>
         </ul>
+        <div class="position-box">
+          <p class="position-head">AGON의 위치: <strong>중장기 마케팅 × 소규모~대규모 유통 올인원</strong></p>
+          <p>브랜드의 일본 진입 단계부터 중장기 전략 수립, 대형 유통 채널 입점까지 일괄로 지원합니다. 실무는 <strong>10년차 일본인 마케터를 중심으로</strong> 시장조사·기획·집행을 맡는 형태입니다.</p>
+          <p class="source">출처: 회사소개서 p.2, p.4</p>
+        </div>
       </div>
-      <figure class="hyperz-figure reveal">
-        <button type="button" class="zoom" data-full="assets/60-hyperz-cover.jpg"><img src="assets/60-hyperz-cover.jpg" alt="HYPERZ-UNIVERSE 크리에이터 리스트 표지, Let's HYPE it up!" width="1600" height="900" loading="lazy"></button>
+
+      <figure class="quad-figure">
+        <div class="quad" role="img" aria-label="대행사별 포지션 비교. 세로축은 초기 마케팅에서 중장기 마케팅, 가로축은 소규모 유통에서 대규모 유통. 초기 마케팅사는 초기 마케팅·소규모 유통, PR·팝업 운영사는 소규모 유통 중간, 이커머스 전개사는 중장기 마케팅·소규모 유통, 벤더사는 초기 마케팅·대규모 유통, AGON Corp.은 중장기 마케팅·대규모 유통에 위치합니다.">
+          <span class="quad-axis ax-top"><b>중장기</b> 마케팅</span>
+          <span class="quad-axis ax-bottom"><b>초기</b> 마케팅</span>
+          <span class="quad-axis ax-left"><b>소규모</b><br>유통</span>
+          <span class="quad-axis ax-right"><b>대규모</b><br>유통</span>
+          <span class="quad-item" style="--x:28%;--y:25%"><b>이커머스 전개사</b><small>아마존 등 현지 창고</small></span>
+          <span class="quad-item" style="--x:30%;--y:58%"><b>PR·팝업 운영사</b><small>언론 PR·팝업스토어</small></span>
+          <span class="quad-item" style="--x:27%;--y:81%"><b>초기 마케팅사</b><small>큐텐 대행·시딩</small></span>
+          <span class="quad-item" style="--x:74%;--y:79%"><b>벤더사</b><small>대규모 유통</small></span>
+          <span class="quad-item quad-agon" style="--x:74%;--y:25%"><b>AGON Corp.</b><small>중장기 마케팅 × 대규모 유통</small></span>
+        </div>
+        <figcaption>대행사별 포지션 비교 (회사소개서 p.2 내용을 다시 그림)</figcaption>
       </figure>
     </div>
+  </div>
+</section>
 
-    <h3 class="hyperz-sub reveal">크리에이터 명단</h3>
-    <div class="chips" role="group" aria-label="국가" data-filter-target="roster">
-      <button type="button" class="chip" data-value="all" aria-pressed="true">전체 38</button>
-      <button type="button" class="chip" data-value="kr" aria-pressed="false">한국 14</button>
-      <button type="button" class="chip" data-value="jp" aria-pressed="false">일본 9</button>
-      <button type="button" class="chip" data-value="vn" aria-pressed="false">베트남 13</button>
-      <button type="button" class="chip" data-value="ru" aria-pressed="false">러시아 2</button>
+<!-- 4. 업무 범위 -->
+<section class="section" id="scope" aria-labelledby="scope-title">
+  <div class="wrap">
+    <p class="eyebrow">Scope of Work</p>
+    <h2 id="scope-title">업무 범위</h2>
+    <div class="scope-grid">
+      <div class="scope-card">
+        <h3>마케팅</h3>
+        <ul>
+          <li>인플루언서 마케팅</li>
+          <li>큐텐 운영 대행</li>
+          <li>병의원 마케팅</li>
+          <li>일본 시딩</li>
+          <li>트위터 운영 대행</li>
+          <li>잡지·매체 PR</li>
+          <li>일본 현지 팝업스토어</li>
+          <li>일본 진출 아티스트</li>
+        </ul>
+      </div>
+      <div class="scope-card">
+        <h3>1차 유통</h3>
+        <ul>
+          <li>일본 진출 브랜드사 소싱</li>
+          <li>한국 M&amp;A 대상 브랜드 소싱</li>
+          <li>일본 유통 대행 (패키지 번역, 법률 검토 등)</li>
+          <li>돈키호테 PB 협력사</li>
+          <li>OEM/ODM</li>
+        </ul>
+      </div>
+      <div class="scope-card">
+        <h3>2차 유통</h3>
+        <ul>
+          <li>일본 유통 대리점 영업</li>
+          <li>총판</li>
+        </ul>
+      </div>
+      <div class="scope-card">
+        <h3>국내 마케팅</h3>
+        <ul>
+          <li>리뷰 체험단 (올리브영·무신사·쿠팡·네이버·G마켓)</li>
+          <li>네이버 검색광고·메타광고</li>
+          <li>AGON AGENCY 모델 섭외</li>
+          <li>인플루언서 마케팅</li>
+        </ul>
+      </div>
     </div>
-    <div class="table-wrap">
-      <table class="data-table roster" id="roster">
-        <caption class="sr-only">하이퍼즈 유니버스 크리에이터 명단: 플랫폼, 팔로워, 분야, 주 시청층, 평균·최고 조회수</caption>
-        <thead>
-          <tr><th scope="col">크리에이터</th><th scope="col">플랫폼</th><th scope="col">팔로워</th><th scope="col">분야</th><th scope="col">주 시청층</th><th scope="col">평균 조회수</th><th scope="col">최고 조회수</th></tr>
-        </thead>
-        <tbody>
+    <p class="source">출처: 회사소개서 p.3 / 국내 마케팅 제안서 p.3~9</p>
+
+    <h3 class="sub-title">큐텐 운영 대행에서 하는 일</h3>
+    <div class="qoo-grid">
+      <div><h4>상품·페이지</h4><p>상품 마스터 등록, 상세페이지 검수와 일본 약사법 검토, 키워드·SEO 최적화</p></div>
+      <div><h4>운영</h4><p>경쟁사 분석, 옵션·재고·노출 모니터링, 큐텐 내 프로모션·기획전 대응, SNS 연계 콘텐츠</p></div>
+      <div><h4>고객·물류</h4><p>CS·리뷰 대응, 클레임·반품·교환 대응, 수출입·통관, 물류대행사 연동과 재고 관리</p></div>
+      <div><h4>브랜드사 소통</h4><p>큐텐 MD 커뮤니케이션, 정기 미팅, 일본 트렌드·시장 정보 공유</p></div>
+    </div>
+    <p class="source">출처: 회사소개서(2025 초판) p.4</p>
+
+    <h3 class="sub-title">일본 마케팅 3단계</h3>
+    <ol class="steps">
+      <li class="step">
+        <span class="step-no">STEP 1</span>
+        <h4>기본 마케팅 — QRIT</h4>
+        <p><b>Q</b>oo10 입점·운영 / <b>R</b>eview 캠페인(일본인 베스트 리뷰어 직접 컨택) / <b>I</b>nstagram 공식 계정 운영·시딩 / <b>T</b>witter 나노 인플루언서 마케팅</p>
+      </li>
+      <li class="step">
+        <span class="step-no">STEP 2</span>
+        <h4>적응 마케팅</h4>
+        <p>자체 DB로 5만 팔로워 이상~메가급 인플루언서 섭외, 인플루언서 콜라보 공동구매, 일본 블로그 마케팅(SEO), 유튜브 마케팅</p>
+      </li>
+      <li class="step">
+        <span class="step-no">STEP 3</span>
+        <h4>심화 마케팅</h4>
+        <p>일본 매거진·매체 PR(연예인 콜라보 연계), 현지 팝업스토어, K-POP 페스티벌 부스</p>
+      </li>
+    </ol>
+    <p class="source">출처: 회사소개서 p.5~7</p>
+  </div>
+</section>
+
+<!-- 5. 대표 사례 -->
+<section class="section alt" id="cases" aria-labelledby="cases-title">
+  <div class="wrap">
+    <p class="eyebrow">Case Studies</p>
+    <h2 id="cases-title">대표 사례</h2>
+    <p>각 사례는 성과를 먼저 보여 드리고, 배경과 한 일은 펼쳐서 볼 수 있습니다. 사진은 누르면 크게 볼 수 있습니다.</p>
+    <nav class="case-jump" aria-label="사례 카테고리">
+      <a href="#cat-a">A. 일본 유통</a>
+      <a href="#cat-b">B. 큐텐·이커머스 운영</a>
+      <a href="#cat-c">C. 인플루언서·SNS 마케팅</a>
+      <a href="#cat-d">D. PR·오프라인·퍼포먼스</a>
+      <a href="#cat-e">E. 국내 마케팅</a>
+    </nav>
+
+    <h3 class="cat-title" id="cat-a">A. 일본 유통</h3>
+    <div class="case-list">
+
+      <article class="case" id="case-jovs">
+        <div class="case-head"><span class="badge">A. 일본 유통</span><span class="case-id">A-1</span></div>
+        <h4 class="case-title">JOVS — 오프라인 입점으로 온라인 1위까지 만든 제모기 유통</h4>
+        <ul class="kpi-grid kpi-case-grid">
+          <li class="kpi"><strong class="kpi-num">600%</strong><span class="kpi-label">2년 만에 유통금액 증가</span></li>
+          <li class="kpi"><strong class="kpi-num">1위</strong><span class="kpi-label">2024년 일본 온라인 점유율</span></li>
+          <li class="kpi"><strong class="kpi-num">약 1,000곳</strong><span class="kpi-label">2024년 입점 매장 수</span></li>
+        </ul>
+        <figure class="bar-chart">
+          <figcaption>전국 입점 매장 수</figcaption>
+          <div class="bars">
+            <div class="bar" style="--h:.3"><span class="bar-val">300곳</span><span class="bar-fill"></span><span class="bar-key">2022년</span></div>
+            <div class="bar bar-hi" style="--h:1"><span class="bar-val">약 1,000곳</span><span class="bar-fill"></span><span class="bar-key">2024년</span></div>
+          </div>
+        </figure>
+        <div class="case-body">
+          <h5>성과</h5>
+          <ul>
+            <li>온라인 점유율: 2022년 TOP10 밖이었으나, 2024년 일본 온라인 점유율 1위·오프라인 점유율 4위 달성</li>
+            <li>판매 시작 1년 만에 라쿠텐·야후 등에서 판매량 1위, 라쿠텐 랭킹 15관왕, 라쿠텐 SHOP OF THE MONTH 수상</li>
+            <li>2024년 제모기 시장 점유율 18%, 2023년 매출 40억 엔</li>
+            <li>2024년 일본 내 유통 총액 약 40억 엔 이상</li>
+          </ul>
+          <p class="point">"일본은 오프라인 입점 매장이 늘면 온라인 매출도 같이 오르는 시장"이라는 걸 보여 준 사례입니다.</p>
+        </div>
+        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-jovs">배경·한 일 보기</button>
+        <div class="more" id="more-jovs">
+          <h5>배경</h5>
+          <p>제모기 브랜드 JOVS의 일본 유통.</p>
+          <h5>한 일</h5>
+          <p>오프라인 매장 입점을 넓히는 전략. 요도바시카메라·빅카메라·야마다·돈키호테 등 양판점과 버라이어티숍 입점을 확대했습니다.</p>
+        </div>
+        <div class="gallery" style="--cols:2">
+          <button type="button" class="zoom" data-full="img/jovs-product.jpg"><img src="img/jovs-product.jpg" alt="JOVS 제모기 제품 3종" loading="lazy"></button>
+          <button type="button" class="zoom" data-full="img/jovs-store.jpg"><img src="img/jovs-store.jpg" alt="일본 양판점의 JOVS 매대" loading="lazy"></button>
+        </div>
+        <p class="source">출처: 회사소개서(2025 초판) p.10~11</p>
+      </article>
+
+      <article class="case" id="case-unix">
+        <div class="case-head"><span class="badge">A. 일본 유통</span><span class="case-id">A-2</span></div>
+        <h4 class="case-title">UNIX TAKEOUT — 돈키호테 400개 지점 유통과 메가급 인플루언서 마케팅</h4>
+        <ul class="kpi-grid kpi-case-grid">
+          <li class="kpi"><strong class="kpi-num">400개 지점</strong><span class="kpi-label">돈키호테 입점</span></li>
+          <li class="kpi"><strong class="kpi-num">4만 개</strong><span class="kpi-label">초도 매입</span></li>
+          <li class="kpi"><strong class="kpi-num">156만</strong><span class="kpi-label">뷰티 유튜버 등 메가급 인플루언서</span></li>
+        </ul>
+        <div class="product-strip" role="group" aria-label="UNIX TAKEOUT 시리즈 제품">
+          <img src="img/unix-product-00.png" alt="UNIX TAKEOUT 옐로 고데기" loading="lazy">
+          <img src="img/unix-product-01.png" alt="UNIX TAKEOUT 퍼플 고데기" loading="lazy">
+          <img src="img/unix-product-02.png" alt="UNIX TAKEOUT 오렌지 컬 고데기" loading="lazy">
+          <img src="img/unix-product-03.png" alt="UNIX TAKEOUT 브러시 고데기" loading="lazy">
+          <img src="img/unix-product-04.png" alt="UNIX TAKEOUT 핑크 컬 고데기" loading="lazy">
+        </div>
+        <div class="case-body">
+          <h5>성과</h5>
+          <ul>
+            <li>초도 매입 4만 개, 돈키호테 400개 지점 입점, 초도 마케팅 규모 2억 원</li>
+            <li>156만·35만 규모의 뷰티 유튜버 등 메가급 인플루언서 활용</li>
+            <li>2026년 TAKEOUT 다음 시리즈 진출 예정 (소개서 작성 시점의 계획)</li>
+          </ul>
+        </div>
+        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-unix">배경·한 일 보기</button>
+        <div class="more" id="more-unix">
+          <h5>배경</h5>
+          <p>2025년 프로젝트. 한국 가전 브랜드 UNIX의 TAKEOUT 시리즈를 일본에 유통했습니다.</p>
+          <h5>한 일</h5>
+          <ul>
+            <li>패키지 번역부터 물류까지 유통 전 과정을 총괄</li>
+            <li>런칭 시점에 맞춰 메가급 유튜버·틱톡커 마케팅을 집행</li>
+            <li>공식 모델 섭외와 촬영은 <a href="#case-agency">E-1 사례</a>에 정리</li>
+          </ul>
+        </div>
+        <div class="gallery" style="--cols:4">
+          <button type="button" class="zoom" data-full="img/unix-yt-1.jpg"><img src="img/unix-yt-1.jpg" alt="156만 뷰티 유튜버의 UNIX TAKEOUT 소개 영상" loading="lazy"></button>
+          <button type="button" class="zoom" data-full="img/unix-yt-2.jpg"><img src="img/unix-yt-2.jpg" alt="35만 뷰티 유튜버의 UNIX TAKEOUT 소개 영상" loading="lazy"></button>
+          <button type="button" class="zoom" data-full="img/unix-tt-1.jpg"><img src="img/unix-tt-1.jpg" alt="UNIX TAKEOUT 숏폼 영상 1" loading="lazy"></button>
+          <button type="button" class="zoom" data-full="img/unix-tt-2.jpg"><img src="img/unix-tt-2.jpg" alt="UNIX TAKEOUT 숏폼 영상 2" loading="lazy"></button>
+        </div>
+        <p class="source">출처: 회사소개서 p.9, p.16</p>
+      </article>
+
+      <article class="case" id="case-network">
+        <div class="case-head"><span class="badge">A. 일본 유통</span><span class="case-id">A-3</span></div>
+        <h4 class="case-title">오프라인 유통망과 대량 입점 사례</h4>
+        <ul class="kpi-grid kpi-case-grid">
+          <li class="kpi"><strong class="kpi-num">2,000곳</strong><span class="kpi-label">가전 대형 매장 유통망</span></li>
+          <li class="kpi"><strong class="kpi-num">1,000곳</strong><span class="kpi-label">버라이어티 스토어 유통망</span></li>
+          <li class="kpi"><strong class="kpi-num">약 6,500개</strong><span class="kpi-label">Case 2 입점 점포</span></li>
+        </ul>
+        <ul class="net-logos" aria-label="유통망 매장 로고">
+          <li><img src="img/net/net-20.png" alt="요도바시카메라" loading="lazy"></li>
+          <li><img src="img/net/net-16.png" alt="YAMADA" loading="lazy"></li>
+          <li><img src="img/net/net-10.png" alt="케즈덴키" loading="lazy"></li>
+          <li><img src="img/net/net-13.png" alt="노지마" loading="lazy"></li>
+          <li><img src="img/net/net-17.png" alt="코지마" loading="lazy"></li>
+          <li><img src="img/net/net-15.png" alt="AEON" loading="lazy"></li>
+          <li><img src="img/net/net-18.png" alt="DEN-KICHI" loading="lazy"></li>
+          <li><img src="img/net/net-14.png" alt="TSUTAYA Electrics" loading="lazy"></li>
+          <li><img src="img/net/net-04.png" alt="돈키호테" loading="lazy"></li>
+          <li><img src="img/net/net-05.png" alt="PLAZA" loading="lazy"></li>
+          <li><img src="img/net/net-08.png" alt="HANDS" loading="lazy"></li>
+          <li><img src="img/net/net-02.png" alt="@cosme" loading="lazy"></li>
+          <li><img src="img/net/net-01.png" alt="하비타 habita" loading="lazy"></li>
+          <li><img src="img/net/net-00.png" alt="Beisia" loading="lazy"></li>
+          <li><img src="img/net/net-06.png" alt="shop in" loading="lazy"></li>
+          <li><img src="img/net/net-11.png" alt="how's" loading="lazy"></li>
+          <li><img src="img/net/net-09.png" alt="TSUTAYA BOOKS" loading="lazy"></li>
+        </ul>
+        <div class="case-body">
+          <h5>성과</h5>
+          <ul>
+            <li><strong>Case 1</strong>: 중국 선전 제조 제모기. 전국 약 600개 점포에 입점했고, 돈키호테 그룹에서 주력 상품으로 전개됐습니다.</li>
+            <li><strong>Case 2</strong>: 한국 헤어 고데기. 전국 약 6,500개 점포에 입점했고, 일본 상륙 첫 회에 3만 대를 납품했습니다.</li>
+          </ul>
+        </div>
+        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-network">유통망 보기</button>
+        <div class="more" id="more-network">
+          <h5>유통망</h5>
+          <p>가전 대형 매장 2,000곳(요도바시카메라, 빅카메라, EDION, 야마다, 케즈덴키, 노지마, 코지마, AEON 등)과 버라이어티 스토어 1,000곳(LOFT, PLAZA, HANDS, @cosme, 돈키호테, 하비타 등)</p>
+        </div>
+        <div class="gallery" style="--cols:4">
+          <button type="button" class="zoom tall" data-full="img/offline-1a.jpg"><img src="img/offline-1a.jpg" alt="Case 1 제모기 매장 진열" loading="lazy"></button>
+          <button type="button" class="zoom tall" data-full="img/offline-1b.jpg"><img src="img/offline-1b.jpg" alt="Case 1 제모기 매대" loading="lazy"></button>
+          <button type="button" class="zoom tall" data-full="img/offline-2a.jpg"><img src="img/offline-2a.jpg" alt="Case 2 헤어 고데기 매대" loading="lazy"></button>
+          <button type="button" class="zoom tall" data-full="img/offline-2b.jpg"><img src="img/offline-2b.jpg" alt="Case 2 헤어 고데기 진열 선반" loading="lazy"></button>
+        </div>
+        <p class="source">출처: 회사소개서 p.10~11 (Case 1·2의 브랜드명은 소개서에 나오지 않음)</p>
+      </article>
+    </div>
+
+    <h3 class="cat-title" id="cat-b">B. 큐텐(Qoo10)·이커머스 운영</h3>
+    <div class="case-list">
+
+      <article class="case" id="case-essenciel">
+        <div class="case-head"><span class="badge">B. 큐텐·이커머스</span><span class="case-id">B-1</span></div>
+        <h4 class="case-title">ESSENCIEL — 런칭 2개월 만에 큐텐 탑페이지 1위</h4>
+        <ul class="kpi-grid kpi-case-grid">
+          <li class="kpi"><strong class="kpi-num">실시간 1위</strong><span class="kpi-label">큐텐 탑페이지</span></li>
+          <li class="kpi"><strong class="kpi-num">4위</strong><span class="kpi-label">큐텐 뷰티 종합</span></li>
+          <li class="kpi"><strong class="kpi-num">200건 이상</strong><span class="kpi-label">매월 시딩</span></li>
+        </ul>
+        <div class="case-body">
+          <h5>성과</h5>
+          <ul>
+            <li>브랜드 런칭 2개월 만에 큐텐 탑페이지 실시간 1위, 뷰티 종합 4위</li>
+            <li>미용액 카테고리 1위, 세럼 카테고리 2위</li>
+            <li>매월 200건 이상 대량 시딩 (목표: '한국 세럼'으로서의 6개월 포지셔닝)</li>
+          </ul>
+        </div>
+        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-essenciel">배경·한 일 보기</button>
+        <div class="more" id="more-essenciel">
+          <h5>배경</h5>
+          <p>한국 세럼 브랜드 에센시엘(ESSENCIEL)의 일본 초기 진출. 2025년 6월 대행을 시작해 8월 5일 큐텐 메가데뷔를 진행했습니다.</p>
+          <h5>한 일</h5>
+          <p>큐텐 운영 대행과 마케팅 기획·집행을 총괄했습니다. 매월 200건 이상 시딩으로 브랜드 인지도를 쌓고 있습니다.</p>
+        </div>
+        <div class="gallery gallery-feature">
+          <button type="button" class="zoom contain" data-full="img/essenciel-top.jpg"><img src="img/essenciel-top.jpg" alt="큐텐 탑페이지 랭킹 1위에 오른 ESSENCIEL" loading="lazy"></button>
+          <button type="button" class="zoom contain" data-full="img/essenciel-rank.jpg"><img src="img/essenciel-rank.jpg" alt="큐텐 앱 미용액 카테고리 1위 ESSENCIEL" loading="lazy"></button>
+        </div>
+        <div class="gallery" style="--cols:3">
+          <button type="button" class="zoom contain" data-full="img/essenciel-serum-1.jpg"><img src="img/essenciel-serum-1.jpg" alt="ESSENCIEL 세럼 블루·그린" loading="lazy"></button>
+          <button type="button" class="zoom contain" data-full="img/essenciel-serum-2.jpg"><img src="img/essenciel-serum-2.jpg" alt="ESSENCIEL 세럼 옐로·블루" loading="lazy"></button>
+          <button type="button" class="zoom contain" data-full="img/essenciel-serum-3.jpg"><img src="img/essenciel-serum-3.jpg" alt="ESSENCIEL 세럼 실버·옐로" loading="lazy"></button>
+        </div>
+        <p class="source">출처: 회사소개서 p.13, p.17 / 노션 업무 기록</p>
+      </article>
+
+      <article class="case" id="case-cellology">
+        <div class="case-head"><span class="badge">B. 큐텐·이커머스</span><span class="case-id">B-2</span></div>
+        <h4 class="case-title">CELLOLOGY — 한국 병의원 입점을 레퍼런스로 큐텐 1위</h4>
+        <ul class="kpi-grid kpi-case-grid">
+          <li class="kpi"><strong class="kpi-num">1위</strong><span class="kpi-label">큐텐 미용기기 카테고리, 2024년 11월</span></li>
+        </ul>
+        <div class="case-body">
+          <h5>성과</h5>
+          <ul>
+            <li>셀올로지 미용기기를 강남 피부과와 송파 약국에 입점시키고, 이를 일본 마케팅 레퍼런스로 활용</li>
+            <li>2024년 11월 큐텐 미용기기 카테고리 1위 달성</li>
+          </ul>
+        </div>
+        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-cellology">한 일 보기</button>
+        <div class="more" id="more-cellology">
+          <h5>한 일</h5>
+          <p>일본 마케팅 방향을 '일본 SNS에 정보 쌓기'로 잡고, 기기 성능을 알리는 정보성 콘텐츠를 만들어 발행했습니다.</p>
+        </div>
+        <div class="gallery" style="--cols:3">
+          <button type="button" class="zoom tall" data-full="img/cellology-clinic.jpg"><img src="img/cellology-clinic.jpg" alt="강남 소재 피부과에 입점한 CELLOLOGY" loading="lazy"></button>
+          <button type="button" class="zoom tall" data-full="img/cellology-pharmacy.jpg"><img src="img/cellology-pharmacy.jpg" alt="송파 소재 약국에 입점한 CELLOLOGY" loading="lazy"></button>
+          <button type="button" class="zoom tall" data-full="img/cellology-video.jpg"><img src="img/cellology-video.jpg" alt="일본 인플루언서의 CELLOLOGY 소개 영상" loading="lazy"></button>
+        </div>
+        <p class="source">출처: 회사소개서 p.20</p>
+      </article>
+
+      <article class="case" id="case-wooliliwoo">
+        <div class="case-head"><span class="badge">B. 큐텐·이커머스</span><span class="case-id">B-3</span></div>
+        <h4 class="case-title">Wooliliwoo — 큐텐 대행과 트위터 마케팅으로 완판</h4>
+        <ul class="kpi-grid kpi-case-grid">
+          <li class="kpi"><strong class="kpi-num">1,500개 완판</strong><span class="kpi-label">첫 메가와리 초기 물량</span></li>
+          <li class="kpi"><strong class="kpi-num">14위</strong><span class="kpi-label">세 번째 메가와리 큐텐 뷰티 종합</span></li>
+          <li class="kpi"><strong class="kpi-num">1,600만 엔</strong><span class="kpi-label">세 번째 메가와리 매출</span></li>
+        </ul>
+        <ol class="timeline" aria-label="큐텐 판매 흐름">
+          <li><b>2022년 5월</b><span>런칭과 기본 시딩</span></li>
+          <li><b>6개월</b><span>기본 시딩·기본 마케팅으로 제품 인지 개선</span></li>
+          <li class="tl-hi"><b>2022년 10~11월</b><span>메가와리 집중 마케팅으로 전환, 재고 전량 소진</span></li>
+        </ol>
+        <div class="case-body">
+          <h5>성과</h5>
+          <ul>
+            <li>첫 메가와리에서 초기 물량 1,500개 완판 (두 번째 메가와리 때는 재고 없음)</li>
+            <li>세 번째 메가와리에서 큐텐 뷰티 종합 14위, 매출 1,600만 엔</li>
+            <li>판매 흐름은 소개서 p.15 큐텐 판매량 그래프 기준</li>
+          </ul>
+        </div>
+        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-wooliliwoo">배경·한 일 보기</button>
+        <div class="more" id="more-wooliliwoo">
+          <h5>배경</h5>
+          <p>Wooliliwoo 브랜드의 일본 진출. 큐텐 대행과 마케팅 기획·집행을 총괄했습니다.</p>
+          <h5>한 일</h5>
+          <p>트위터 마케팅으로 초기 수요를 만들고, 메가와리(큐텐 대형 할인 행사)에 마케팅을 집중했습니다.</p>
+        </div>
+        <div class="gallery" style="--cols:3">
+          <button type="button" class="zoom tall" data-full="img/wooliliwoo-ad.jpg"><img src="img/wooliliwoo-ad.jpg" alt="Wooliliwoo 에그 선쿠션 광고 이미지" loading="lazy"></button>
+          <button type="button" class="zoom tall" data-full="img/wooliliwoo-brand.jpg"><img src="img/wooliliwoo-brand.jpg" alt="Wooliliwoo 일본어 브랜드 소개 페이지" loading="lazy"></button>
+          <button type="button" class="zoom tall contain" data-full="img/wooliliwoo-qoo10.jpg"><img src="img/wooliliwoo-qoo10.jpg" alt="Wooliliwoo 큐텐 상품 페이지" loading="lazy"></button>
+        </div>
+        <p class="source">출처: 회사소개서 p.14~15</p>
+      </article>
+
+      <article class="case" id="case-zigtag">
+        <div class="case-head"><span class="badge">B. 큐텐·이커머스</span><span class="case-id">B-4</span></div>
+        <h4 class="case-title">ZIGTAG — 큐텐 운영 대행과 메가와리 데이터 분석</h4>
+        <ul class="kpi-grid kpi-case-grid">
+          <li class="kpi"><strong class="kpi-num">325,265엔</strong><span class="kpi-label">2025년 8월 31일~9월 12일 메가와리 매출</span></li>
+          <li class="kpi"><strong class="kpi-num">70% 이상</strong><span class="kpi-label">상위 3개 상품의 매출 비중</span></li>
+        </ul>
+        <div class="case-body">
+          <h5>메가와리 리포트</h5>
+          <ul>
+            <li>주문 60건(상품 134개), 총 PV 2,979, ROAS 263.80 (리포트 표기 그대로)</li>
+            <li>상위 3개 상품이 매출의 70% 이상 → 주력 상품을 집중하는 전략이 통함</li>
+            <li>타임세일은 17~24시에 가장 많이 팔렸고, 이 시간대 구매 전환율도 높았음</li>
+          </ul>
+        </div>
+        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-zigtag">배경·이어서 한 일 보기</button>
+        <div class="more" id="more-zigtag">
+          <h5>배경</h5>
+          <p>한국 스킨케어 브랜드의 큐텐 운영 대행. 2025년 6월 킥오프 이후 마케팅을 제안했습니다.</p>
+          <h5>이어서 한 일</h5>
+          <ul>
+            <li>검색 키워드('이너드라이', '남성', '모공')를 분석해 다음 메가와리용 상세페이지·세트 구성 개선안 제안</li>
+            <li>메가와리 전후 구매 공백을 고려한 11월 메가와리 판촉 스케줄(일본어)을 작성</li>
+          </ul>
+        </div>
+        <p class="source">출처: 노션 'ZIGTAG 메가와리 리포트'</p>
+      </article>
+    </div>
+
+    <h3 class="cat-title" id="cat-c">C. 인플루언서·SNS 마케팅</h3>
+    <div class="case-list">
+
+      <article class="case" id="case-dinto">
+        <div class="case-head"><span class="badge">C. 인플루언서·SNS</span><span class="case-id">C-1</span></div>
+        <h4 class="case-title">Dinto — 인플루언서 × 큐텐 콜라보 판매</h4>
+        <ul class="kpi-grid kpi-case-grid">
+          <li class="kpi"><strong class="kpi-num">4,300만 원</strong><span class="kpi-label">단 2일 만의 매출</span></li>
+          <li class="kpi"><strong class="kpi-num">1,556개</strong><span class="kpi-label">세트 판매</span></li>
+          <li class="kpi"><strong class="kpi-num">4,500개</strong><span class="kpi-label">립스틱 판매</span></li>
+        </ul>
+        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-dinto">배경·한 일 보기</button>
+        <div class="more" id="more-dinto">
+          <h5>배경</h5>
+          <p>한국 색조 브랜드 Dinto. 일본 연휴 기간에 맞춰 판매했습니다.</p>
+          <h5>한 일</h5>
+          <ul>
+            <li>인플루언서와 큐텐에서 공동 판매를 진행</li>
+            <li>일본인이 선호하는 세트로 전 컬러를 재구성하고 상세페이지를 제작</li>
+          </ul>
+        </div>
+        <div class="gallery" style="--cols:2">
+          <button type="button" class="zoom tall" data-full="img/dinto-1.jpg"><img src="img/dinto-1.jpg" alt="Dinto 콜라보 인플루언서와 퍼스널컬러별 립 구성" loading="lazy"></button>
+          <button type="button" class="zoom tall" data-full="img/dinto-2.jpg"><img src="img/dinto-2.jpg" alt="Dinto 블러링 립 베일 컬러 안내" loading="lazy"></button>
+        </div>
+        <p class="source">출처: 회사소개서 p.19</p>
+      </article>
+
+      <article class="case" id="case-not4u">
+        <div class="case-head"><span class="badge">C. 인플루언서·SNS</span><span class="case-id">C-2</span></div>
+        <h4 class="case-title">NOT4U — 바디미스트 LOFT 입점 SNS·매체 마케팅</h4>
+        <ul class="kpi-grid kpi-case-grid">
+          <li class="kpi"><strong class="kpi-num">41만 회</strong><span class="kpi-label">매체만으로 조회(View)</span></li>
+          <li class="kpi"><strong class="kpi-num">6,262회</strong><span class="kpi-label">저장</span></li>
+        </ul>
+        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-not4u">배경·한 일 보기</button>
+        <div class="more" id="more-not4u">
+          <h5>배경</h5>
+          <p>NOT4U 바디미스트가 일본 LOFT에 입점하는 날에 맞춘 캠페인입니다.</p>
+          <h5>한 일</h5>
+          <ul>
+            <li>자체 DB의 마이크로급 트위터·틱톡 인플루언서를 활용</li>
+            <li>뷰티 매체 홍보로 신뢰도를 보강</li>
+          </ul>
+        </div>
+        <div class="gallery" style="--cols:3">
+          <button type="button" class="zoom tall" data-full="img/not4u-loft.jpg"><img src="img/not4u-loft.jpg" alt="LOFT 매장에 진열된 NOT4U 바디미스트" loading="lazy"></button>
+          <button type="button" class="zoom tall" data-full="img/not4u-1.jpg"><img src="img/not4u-1.jpg" alt="NOT4U 뷰티 매체 인스타그램 게시물" loading="lazy"></button>
+          <button type="button" class="zoom tall" data-full="img/not4u-3.jpg"><img src="img/not4u-3.jpg" alt="NOT4U 틱톡 인플루언서 영상" loading="lazy"></button>
+        </div>
+        <p class="source">출처: 회사소개서 p.21</p>
+      </article>
+
+      <article class="case" id="case-himari">
+        <div class="case-head"><span class="badge">C. 인플루언서·SNS</span><span class="case-id">C-3</span></div>
+        <h4 class="case-title">일본 인플루언서 × 서울 식당 (히마리 × 부엉이산장)</h4>
+        <ul class="kpi-grid kpi-case-grid">
+          <li class="kpi"><strong class="kpi-num">약 6.6만</strong><span class="kpi-label">X(트위터) 게시물 조회 (게시 22시간 후)</span></li>
+          <li class="kpi"><strong class="kpi-num">약 3.6만</strong><span class="kpi-label">인스타그램 릴스 조회</span></li>
+        </ul>
+        <div class="case-body">
+          <h5>성과</h5>
+          <ul>
+            <li>X(트위터) 게시물: 게시 22시간 후 조회 약 6.6만, 좋아요 597, 저장 219</li>
+            <li>인스타그램 릴스: 조회 약 3.6만</li>
+          </ul>
+        </div>
+        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-himari">배경 보기</button>
+        <div class="more" id="more-himari">
+          <h5>배경</h5>
+          <p>2025년 5월. 일본 인플루언서 히마리와 서울 연남동 식당 부엉이산장의 홍보 협업입니다.</p>
+        </div>
+        <p class="source">출처: 노션 업무 기록</p>
+      </article>
+    </div>
+
+    <h3 class="cat-title" id="cat-d">D. PR·오프라인·퍼포먼스</h3>
+    <div class="case-list">
+
+      <article class="case" id="case-kcon">
+        <div class="case-head"><span class="badge">D. PR·오프라인</span><span class="case-id">D-1</span></div>
+        <h4 class="case-title">KCON 2024 — 색조 브랜드 INTOU 부스 운영</h4>
+        <ul class="kpi-grid kpi-case-grid">
+          <li class="kpi"><strong class="kpi-num">8,000명 이상</strong><span class="kpi-label">부스 방문 (CJ 측 자료)</span></li>
+          <li class="kpi"><strong class="kpi-num">4,000명</strong><span class="kpi-label">브랜드 인스타그램 팔로워 증가</span></li>
+        </ul>
+        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-kcon">배경·한 일 보기</button>
+        <div class="more" id="more-kcon">
+          <h5>배경</h5>
+          <p>2024 CJ KCON 페스티벌에서 진행했습니다.</p>
+          <h5>한 일</h5>
+          <p>CJ KCON 팀과의 소통, 현지 부스 설치, SNS 인플루언서 마케팅을 총괄했습니다.</p>
+        </div>
+        <div class="gallery" style="--cols:3">
+          <button type="button" class="zoom" data-full="img/kcon-1.jpg"><img src="img/kcon-1.jpg" alt="KCON 2024 공연장 전경" loading="lazy"></button>
+          <button type="button" class="zoom" data-full="img/kcon-2.jpg"><img src="img/kcon-2.jpg" alt="INTOU 부스 전경" loading="lazy"></button>
+          <button type="button" class="zoom" data-full="img/kcon-3.jpg"><img src="img/kcon-3.jpg" alt="INTOU 부스를 찾은 방문객" loading="lazy"></button>
+        </div>
+        <p class="source">출처: 회사소개서 p.23</p>
+      </article>
+
+      <article class="case" id="case-maquia">
+        <div class="case-head"><span class="badge">D. PR·오프라인</span><span class="case-id">D-2</span></div>
+        <h4 class="case-title">MAQUIA — 일본 뷰티 매거진 기획 지면 PR</h4>
+        <ul class="kpi-grid kpi-case-grid">
+          <li class="kpi"><strong class="kpi-num">베스트5</strong><span class="kpi-label">'2025 한국 트렌드 베스트5' 기획 지면 게재</span></li>
+          <li class="kpi"><strong class="kpi-num">약 11.3만 부</strong><span class="kpi-label">MAQUIA 월 발행 부수</span></li>
+        </ul>
+        <div class="case-body">
+          <h5>한 일</h5>
+          <ul>
+            <li>'2025 한국 트렌드 베스트5' 기획 지면에 클라이언트 제품을 베스트5 중 하나로 게재 (2025년 2월 20일 게재)</li>
+            <li>담당 에디터 등 기존 매체 인프라로 기획 지면 게재를 성사시키고, 게재 이력의 2차 활용을 지원</li>
+          </ul>
+          <p class="note">원본이 대외비라 이미지와 브랜드명은 싣지 않았습니다.</p>
+        </div>
+        <p class="source">출처: 회사소개서 p.18</p>
+      </article>
+
+      <article class="case" id="case-clinic">
+        <div class="case-head"><span class="badge">D. PR·오프라인</span><span class="case-id">D-3</span></div>
+        <h4 class="case-title">병의원 도쿄 현지 상담회 — 메타광고 + 인플루언서</h4>
+        <ul class="kpi-grid kpi-case-grid">
+          <li class="kpi"><strong class="kpi-num">50명</strong><span class="kpi-label">상담회 하루 평균 모객</span></li>
+          <li class="kpi"><strong class="kpi-num">659.85원</strong><span class="kpi-label">CPC ('성형' 카테고리 기준 효율적인 수준)</span></li>
+        </ul>
+        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-clinic">한 일 보기</button>
+        <div class="more" id="more-clinic">
+          <h5>한 일</h5>
+          <ul>
+            <li>도쿄에서 열린 병의원 현지 상담회를 위해 일본 타깃 메타광고를 집행</li>
+            <li>인플루언서를 활용해 상담회를 사전 홍보</li>
+          </ul>
+        </div>
+        <div class="gallery" style="--cols:3">
+          <button type="button" class="zoom tall" data-full="img/clinic-poster.jpg"><img src="img/clinic-poster.jpg" alt="병의원 도쿄 상담회 안내 광고 이미지 (의료진 3인)" loading="lazy"></button>
+        </div>
+        <p class="source">출처: 회사소개서 p.22</p>
+      </article>
+
+      <article class="case" id="case-popup">
+        <div class="case-head"><span class="badge">D. PR·오프라인</span><span class="case-id">D-4</span></div>
+        <h4 class="case-title">한국 팝업스토어 운영 (일본 브랜드 → 한국)</h4>
+        <ul class="kpi-grid kpi-case-grid">
+          <li class="kpi"><strong class="kpi-num">30명</strong><span class="kpi-label">SKIM 성수 팝업 체험단 규모</span></li>
+        </ul>
+        <div class="case-body">
+          <h5>주요 내용</h5>
+          <ul>
+            <li><strong>APLOM</strong>: 일본 발레 라이프스타일 브랜드의 성수 팝업스토어(11월 21~24일). 인스타그램 체험단 모집과 포스팅 가이드를 운영하고 고객 후기를 수집했습니다.</li>
+            <li><strong>SKIM</strong>: 성수 팝업스토어. VP존·포토존 구성과 체험단을 운영했습니다.</li>
+            <li><strong>10월 POPUP</strong>: 한국 팝업 출전을 원한 일본 스킨케어 거래처를 상담하고, 성수·압구정 일대의 공간을 찾았습니다.</li>
+          </ul>
+        </div>
+        <p class="source">출처: 노션 업무 기록</p>
+      </article>
+    </div>
+
+    <h3 class="cat-title" id="cat-e">E. 국내 마케팅</h3>
+    <p class="cat-lead">한국 시장에서는 리뷰 체험단, 검색·메타광고, 모델 에이전시와 인플루언서 마케팅을 맡습니다.</p>
+    <div class="case-list">
+
+      <article class="case" id="case-agency">
+        <div class="case-head"><span class="badge">E. 국내 마케팅</span><span class="case-id">E-1</span></div>
+        <h4 class="case-title">AGON AGENCY × UNIX — TAKEOUT 공식 모델 섭외와 촬영</h4>
+        <div class="case-body">
+          <h5>한 일</h5>
+          <ul>
+            <li>UNIX TAKEOUT 4.5 시리즈의 공식 모델로, 모델 레퍼런스가 많은 메가급 인플루언서를 섭외</li>
+            <li>촬영 콘티 작성부터 촬영까지 총괄</li>
+          </ul>
+        </div>
+        <div class="gallery" style="--cols:2">
+          <button type="button" class="zoom" data-full="img/agency-1.jpg"><img src="img/agency-1.jpg" alt="UNIX TAKEOUT 공식 모델 촬영 컷 1" loading="lazy"></button>
+          <button type="button" class="zoom" data-full="img/agency-2.jpg"><img src="img/agency-2.jpg" alt="UNIX TAKEOUT 공식 모델 촬영 컷 2" loading="lazy"></button>
+        </div>
+        <p class="source">출처: 국내 마케팅 제안서 p.9</p>
+      </article>
+
+      <article class="case" id="case-kr-influencer">
+        <div class="case-head"><span class="badge">E. 국내 마케팅</span><span class="case-id">E-2</span></div>
+        <h4 class="case-title">국내 인플루언서 캠페인 5건</h4>
+        <ul class="kr-cards">
+          <li><button type="button" class="zoom" data-full="img/kr-musinsa.jpg"><img src="img/kr-musinsa.jpg" alt="MUSINSA 캠페인 인플루언서 방문 리뷰 사진" loading="lazy"></button><b>MUSINSA</b><span>무신사 테라스 20대 인플루언서 방문 리뷰</span><em>총 도달 152,960</em></li>
+          <li><button type="button" class="zoom" data-full="img/kr-plentyplant.jpg"><img src="img/kr-plentyplant.jpg" alt="plentyplant 캠페인 제품 리뷰 사진" loading="lazy"></button><b>plentyplant</b><span>와디즈 펀딩 9120% 달성 더마코스메틱 제품 리뷰</span><em>총 도달 119,950</em></li>
+          <li><button type="button" class="zoom" data-full="img/kr-seoul.jpg"><img src="img/kr-seoul.jpg" alt="서울특별시 캠페인 인플루언서 게시물 사진" loading="lazy"></button><b>서울특별시</b><span>'서울시가 묻습니다' 투표 이벤트 바이럴</span><em>총 도달 90,152</em></li>
+          <li><button type="button" class="zoom" data-full="img/kr-fitamin.jpg"><img src="img/kr-fitamin.jpg" alt="Fitāmin 캠페인 영양제 리뷰 사진" loading="lazy"></button><b>Fitāmin</b><span>추천인 코드로 고객 확보, 영양제 구독 서비스 리뷰</span><em>총 도달 137,766</em></li>
+          <li><button type="button" class="zoom" data-full="img/kr-coupang.jpg"><img src="img/kr-coupang.jpg" alt="건강기능식품 캠페인 운동 인플루언서 사진" loading="lazy"></button><b>건강기능식품</b><span>쿠팡 식이섬유 분야 1위, 운동 인플루언서 추천</span><em>총 도달 117,815</em></li>
+        </ul>
+        <button type="button" class="toggle" aria-expanded="false" aria-controls="more-kr">캠페인별 수치 보기</button>
+        <div class="more" id="more-kr">
+          <div class="table-wrap">
+            <table class="data-table">
+              <caption class="sr-only">국내 인플루언서 캠페인별 참여 인플루언서 팔로워, 좋아요, 도달, 도달당 비용</caption>
+              <thead><tr><th scope="col">브랜드</th><th scope="col">총 팔로워</th><th scope="col">총 좋아요</th><th scope="col">총 도달</th><th scope="col">도달당 비용</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">plentyplant</th><td data-label="총 팔로워">288,671</td><td data-label="총 좋아요">16,566</td><td data-label="총 도달">119,950</td><td data-label="도달당 비용">37원</td></tr>
+                <tr><th scope="row">MUSINSA</th><td data-label="총 팔로워">424,161</td><td data-label="총 좋아요">15,011</td><td data-label="총 도달">152,960</td><td data-label="도달당 비용">35원</td></tr>
+                <tr><th scope="row">서울특별시</th><td data-label="총 팔로워">198,112</td><td data-label="총 좋아요">13,430</td><td data-label="총 도달">90,152</td><td data-label="도달당 비용">14원</td></tr>
+                <tr><th scope="row">Fitāmin</th><td data-label="총 팔로워">357,200</td><td data-label="총 좋아요">10,458</td><td data-label="총 도달">137,766</td><td data-label="도달당 비용">275원</td></tr>
+                <tr><th scope="row">건강기능식품</th><td data-label="총 팔로워">10,237</td><td data-label="총 좋아요">399,143</td><td data-label="총 도달">117,815</td><td data-label="도달당 비용">23원</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p class="source">출처: 국내 마케팅 제안서 p.10~11 (수치는 원문 표기 그대로)</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 6. 하이퍼즈 -->
+<section class="section" id="hyperz" aria-labelledby="hyperz-title">
+  <div class="wrap">
+    <p class="eyebrow">Creator Network</p>
+    <h2 id="hyperz-title">하이퍼즈 유니버스</h2>
+    <div class="hyperz-banner">
+      <div class="hyperz-banner-text">
+        <p class="hyperz-word" aria-hidden="true">HYPERZ-UNIVERSE</p>
+        <p class="hyperz-tag">Let's HYPE it up!</p>
+        <p>AGON이 함께 운영한 크리에이터 그룹입니다. 한국·일본·베트남·러시아 크리에이터와 함께 트렌드와 알고리즘을 읽고, 크리에이터에게는 성장의 길을, 브랜드에게는 믿을 수 있는 연결을 만듭니다.</p>
+      </div>
+      <ul class="kpi-grid hyperz-kpis">
+        <li class="kpi"><strong class="kpi-num">38명</strong><span class="kpi-label">소개서에 실린 크리에이터</span></li>
+        <li class="kpi"><strong class="kpi-num">4개국</strong><span class="kpi-label">한국 14 · 일본 9 · 베트남 13 · 러시아 2</span></li>
+        <li class="kpi"><strong class="kpi-num">510만</strong><span class="kpi-label">최대 팔로워 (TikTok)</span></li>
+      </ul>
+    </div>
+
+    <h3 class="sub-title">크리에이터 명단</h3>
+    <div class="roster-box">
+      <div class="chips" role="group" aria-label="국가" data-filter-target="roster">
+        <button type="button" class="chip" data-value="all" aria-pressed="true">전체 <span class="cnt">38</span></button>
+        <button type="button" class="chip" data-value="kr" aria-pressed="false">한국 <span class="cnt">14</span></button>
+        <button type="button" class="chip" data-value="jp" aria-pressed="false">일본 <span class="cnt">9</span></button>
+        <button type="button" class="chip" data-value="vn" aria-pressed="false">베트남 <span class="cnt">13</span></button>
+        <button type="button" class="chip" data-value="ru" aria-pressed="false">러시아 <span class="cnt">2</span></button>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table roster" id="roster">
+          <caption class="sr-only">하이퍼즈 유니버스 크리에이터 명단: 플랫폼, 팔로워, 분야, 주 시청층, 평균·최고 조회수</caption>
+          <thead><tr><th scope="col">크리에이터</th><th scope="col">플랫폼</th><th scope="col">팔로워</th><th scope="col">분야</th><th scope="col">주 시청층</th><th scope="col">평균 조회수</th><th scope="col">최고 조회수</th></tr></thead>
+          <tbody>
           <tr data-c="kr"><th scope="row">정화 JUNGHWA</th><td data-label="플랫폼">Instagram</td><td data-label="팔로워">63.7만</td><td data-label="분야">운동·패션·뷰티</td><td data-label="주 시청층">10~40대</td><td data-label="평균 조회수">600,000</td><td data-label="최고 조회수">13,610,000</td></tr>
           <tr data-c="kr"><th scope="row">주희 JU HEE</th><td data-label="플랫폼">Instagram</td><td data-label="팔로워">27.8만</td><td data-label="분야">패션·뷰티·라이프</td><td data-label="주 시청층">20~40대</td><td data-label="평균 조회수">300,000</td><td data-label="최고 조회수">2,569,000</td></tr>
           <tr data-c="kr"><th scope="row">은지 EUNZIE</th><td data-label="플랫폼">Instagram</td><td data-label="팔로워">2.2만</td><td data-label="분야">패션·라이프</td><td data-label="주 시청층">20대</td><td data-label="평균 조회수">940,000</td><td data-label="최고 조회수">2,400,000</td></tr>
@@ -530,28 +819,29 @@
           <tr data-c="vn"><th scope="row">느기 NGHI</th><td data-label="플랫폼">Instagram</td><td data-label="팔로워">2.3만</td><td data-label="분야">패션·모델·라이프</td><td data-label="주 시청층">10~30대</td><td data-label="평균 조회수">20,000</td><td data-label="최고 조회수">829,000</td></tr>
           <tr data-c="ru"><th scope="row">알리샤 alishhaa</th><td data-label="플랫폼">TikTok</td><td data-label="팔로워">490만</td><td data-label="분야">뷰티·모델·패션</td><td data-label="주 시청층">20~30대</td><td data-label="평균 조회수">700,000</td><td data-label="최고 조회수">21,600,000</td></tr>
           <tr data-c="ru"><th scope="row">사샤 아이스 isashaice</th><td data-label="플랫폼">Instagram</td><td data-label="팔로워">132만</td><td data-label="분야">패션·리빙·라이프</td><td data-label="주 시청층">20~30대</td><td data-label="평균 조회수">900,000</td><td data-label="최고 조회수">6,000,000</td></tr>
-        </tbody>
-      </table>
+        
+          </tbody>
+        </table>
+      </div>
     </div>
     <p class="source">출처: 하이퍼즈 유니버스 크리에이터 소개서(25.10). 크리에이터 수와 국가 수는 소개서에 실린 프로필을 센 값입니다.</p>
   </div>
 </section>
 
-<!-- 전체 프로젝트 목록 -->
-<section class="section projects" id="projects" aria-labelledby="projects-title">
+<!-- 7. 전체 프로젝트 목록 -->
+<section class="section alt" id="projects" aria-labelledby="projects-title">
   <div class="wrap">
-    <div class="section-head reveal">
-      <h2 id="projects-title">전체 프로젝트 목록</h2>
-      <p>대표 사례 밖의 프로젝트까지 모두 모았습니다. 상태와 분야로 거르거나 이름으로 찾을 수 있습니다.</p>
-    </div>
+    <p class="eyebrow">All Projects</p>
+    <h2 id="projects-title">전체 프로젝트 목록</h2>
+    <p>대표 사례 밖의 프로젝트까지 모두 모았습니다. 상태와 분야로 거르거나 이름으로 찾을 수 있습니다.</p>
 
     <div class="filters">
       <div class="filter-row">
         <span class="filter-label" id="f-status-label">상태</span>
         <div class="chips" role="group" aria-labelledby="f-status-label" data-filter="status">
-          <button type="button" class="chip" data-value="all" aria-pressed="true">전체 <span data-count="all"></span></button>
-          <button type="button" class="chip" data-value="done" aria-pressed="false">완료 <span data-count="done"></span></button>
-          <button type="button" class="chip" data-value="active" aria-pressed="false">진행 중 <span data-count="active"></span></button>
+          <button type="button" class="chip" data-value="all" aria-pressed="true">전체 <span class="cnt" data-count="all"></span></button>
+          <button type="button" class="chip" data-value="done" aria-pressed="false">완료 <span class="cnt" data-count="done"></span></button>
+          <button type="button" class="chip" data-value="active" aria-pressed="false">진행 중 <span class="cnt" data-count="active"></span></button>
         </div>
       </div>
       <div class="filter-row">
@@ -559,37 +849,37 @@
         <div class="chips" role="group" aria-labelledby="f-field-label" data-filter="field">
           <button type="button" class="chip" data-value="all" aria-pressed="true">전체</button>
           <button type="button" class="chip" data-value="dist" aria-pressed="false">유통</button>
-          <button type="button" class="chip" data-value="qoo" aria-pressed="false">큐텐·이커머스</button>
-          <button type="button" class="chip" data-value="sns" aria-pressed="false">인플루언서·SNS</button>
-          <button type="button" class="chip" data-value="pr" aria-pressed="false">PR·오프라인</button>
+          <button type="button" class="chip" data-value="qoo" aria-pressed="false">큐텐/이커머스</button>
+          <button type="button" class="chip" data-value="sns" aria-pressed="false">인플루언서/SNS</button>
+          <button type="button" class="chip" data-value="pr" aria-pressed="false">PR/오프라인</button>
           <button type="button" class="chip" data-value="clinic" aria-pressed="false">병의원</button>
           <button type="button" class="chip" data-value="etc" aria-pressed="false">기타</button>
         </div>
       </div>
       <div class="filter-row">
         <label class="filter-label" for="proj-search">검색</label>
-        <input type="search" id="proj-search" class="search" placeholder="프로젝트명이나 설명으로 찾기" autocomplete="off">
+        <input type="search" id="proj-search" class="search" placeholder="프로젝트명·설명으로 검색" autocomplete="off">
       </div>
       <p class="result-count" id="result-count" aria-live="polite"></p>
     </div>
 
     <ul class="proj-list" id="proj-list">
-      <li class="proj" data-status="done" data-field="pr"><p class="proj-head"><span class="proj-name">APLOM 팝업스토어</span><span class="st st-done">완료</span></p><p class="proj-desc">일본 발레 라이프스타일 브랜드의 성수 팝업, 인스타그램 체험단 <a href="#case-popup">사례 보기</a></p><p class="proj-meta">팝업 · PR·오프라인</p></li>
-      <li class="proj" data-status="done" data-field="pr"><p class="proj-head"><span class="proj-name">SKIM</span><span class="st st-done">완료</span></p><p class="proj-desc">성수 팝업스토어 VP존·포토존, 체험단 30명 <a href="#case-popup">사례 보기</a></p><p class="proj-meta">화장품·팝업 · PR·오프라인</p></li>
-      <li class="proj" data-status="done" data-field="pr"><p class="proj-head"><span class="proj-name">10월 POPUP</span><span class="st st-done">완료</span></p><p class="proj-desc">일본 스킨케어 브랜드의 한국 팝업 출전 상담과 공간 탐색 <a href="#case-popup">사례 보기</a></p><p class="proj-meta">팝업 · PR·오프라인</p></li>
-      <li class="proj" data-status="done" data-field="sns"><p class="proj-head"><span class="proj-name">히마리 × 부엉이산장</span><span class="st st-done">완료</span></p><p class="proj-desc">일본 인플루언서의 연남동 식당 홍보 <a href="#case-himari">사례 보기</a></p><p class="proj-meta">인플루언서 · 인플루언서·SNS</p></li>
-      <li class="proj" data-status="done" data-field="qoo"><p class="proj-head"><span class="proj-name">셀올로지 CELLOLOGY</span><span class="st st-done">완료</span></p><p class="proj-desc">한국 피부과·약국 입점을 레퍼런스로 큐텐 미용기기 카테고리 1위(2024년 11월) <a href="#case-cellology">사례 보기</a></p><p class="proj-meta">미용기기·마케팅 · 큐텐·이커머스</p></li>
+      <li class="proj" data-status="done" data-field="pr"><p class="proj-head"><span class="proj-name">APLOM 팝업스토어</span><span class="st st-done">완료</span></p><p class="proj-desc">일본 발레 라이프스타일 브랜드의 성수 팝업, 인스타그램 체험단 <a href="#case-popup">사례 보기</a></p><p class="proj-meta">팝업 · PR/오프라인</p></li>
+      <li class="proj" data-status="done" data-field="pr"><p class="proj-head"><span class="proj-name">SKIM</span><span class="st st-done">완료</span></p><p class="proj-desc">성수 팝업스토어 VP존·포토존, 체험단 30명 <a href="#case-popup">사례 보기</a></p><p class="proj-meta">화장품·팝업 · PR/오프라인</p></li>
+      <li class="proj" data-status="done" data-field="pr"><p class="proj-head"><span class="proj-name">10월 POPUP</span><span class="st st-done">완료</span></p><p class="proj-desc">일본 스킨케어 브랜드의 한국 팝업 출전 상담과 공간 탐색 <a href="#case-popup">사례 보기</a></p><p class="proj-meta">팝업 · PR/오프라인</p></li>
+      <li class="proj" data-status="done" data-field="sns"><p class="proj-head"><span class="proj-name">히마리 × 부엉이산장</span><span class="st st-done">완료</span></p><p class="proj-desc">일본 인플루언서의 연남동 식당 홍보 <a href="#case-himari">사례 보기</a></p><p class="proj-meta">인플루언서 · 인플루언서/SNS</p></li>
+      <li class="proj" data-status="done" data-field="qoo"><p class="proj-head"><span class="proj-name">셀올로지 CELLOLOGY</span><span class="st st-done">완료</span></p><p class="proj-desc">한국 피부과·약국 입점을 레퍼런스로 큐텐 미용기기 카테고리 1위(2024년 11월) <a href="#case-cellology">사례 보기</a></p><p class="proj-meta">미용기기·마케팅 · 큐텐/이커머스</p></li>
       <li class="proj" data-status="done" data-field="etc"><p class="proj-head"><span class="proj-name">머니박스 (환전소)</span><span class="st st-done">완료</span></p><p class="proj-desc">일본인 대상 한국 여행 정보 사이트 코네스트 입점 투고. 3건 중 2건 게재, 부산 서면점은 2영업일 안에 게재</p><p class="proj-meta">마케팅 · 기타</p></li>
       <li class="proj" data-status="done" data-field="etc"><p class="proj-head"><span class="proj-name">CENE 홍보 영상 촬영</span><span class="st st-done">완료</span></p><p class="proj-desc">홍보 영상 촬영용 모델 섭외와 촬영 진행 (2025년 5월)</p><p class="proj-meta">모델 섭외·마케팅 · 기타</p></li>
       <li class="proj" data-status="done" data-field="etc"><p class="proj-head"><span class="proj-name">하우뮤직 프로덕션</span><span class="st st-done">완료</span></p><p class="proj-desc">일본 진출 아티스트 지원: 일본 페스티벌 영업, 일본어 번안 가사 작업, 트위터 운영</p><p class="proj-meta">일본 진출 아티스트 · 기타</p></li>
       <li class="proj" data-status="done" data-field="clinic"><p class="proj-head"><span class="proj-name">메디힘</span><span class="st st-done">완료</span></p><p class="proj-desc">병원 마케팅</p><p class="proj-meta">병원 마케팅 · 병의원</p></li>
 
-      <li class="proj" data-status="active" data-field="qoo"><p class="proj-head"><span class="proj-name">에센시엘 ESSENCIEL</span><span class="st st-active">진행 중</span></p><p class="proj-desc">큐텐 대행·마케팅. 런칭 2개월 만에 큐텐 탑페이지 실시간 1위, 뷰티 종합 4위 <a href="#case-essenciel">사례 보기</a></p><p class="proj-meta">큐텐 운영 · 큐텐·이커머스</p></li>
-      <li class="proj" data-status="active" data-field="qoo"><p class="proj-head"><span class="proj-name">ZIGTAG</span><span class="st st-active">진행 중</span></p><p class="proj-desc">큐텐 운영 대행, 메가와리 리포트와 개선안 <a href="#case-zigtag">사례 보기</a></p><p class="proj-meta">큐텐 운영 · 큐텐·이커머스</p></li>
-      <li class="proj" data-status="active" data-field="qoo"><p class="proj-head"><span class="proj-name">JS 에오샴푸</span><span class="st st-active">진행 중</span></p><p class="proj-desc">큐텐 상품 등록(단품 3종·세트 1종), 상세페이지 번역·현지화, 6개월 기본 세팅 (2025년 5~6월)</p><p class="proj-meta">큐텐 운영 · 큐텐·이커머스</p></li>
-      <li class="proj" data-status="active" data-field="qoo"><p class="proj-head"><span class="proj-name">수소로 SUSORO</span><span class="st st-active">진행 중</span></p><p class="proj-desc">큐텐 운영</p><p class="proj-meta">큐텐 운영 · 큐텐·이커머스</p></li>
-      <li class="proj" data-status="active" data-field="qoo"><p class="proj-head"><span class="proj-name">일본 아마존·큐텐 검색광고 세팅</span><span class="st st-active">진행 중</span></p><p class="proj-desc">검색광고 운영 방식(대행 vs 인하우스) 검토</p><p class="proj-meta">검색광고 · 큐텐·이커머스</p></li>
-      <li class="proj" data-status="active" data-field="sns"><p class="proj-head"><span class="proj-name">플로위 FLOWY</span><span class="st st-active">진행 중</span></p><p class="proj-desc">마케팅 제안, 트위터 운영과 인스타그램 시딩 세팅 (큐텐 운영은 클라이언트 자체 진행)</p><p class="proj-meta">큐텐·마케팅 · 인플루언서·SNS</p></li>
+      <li class="proj" data-status="active" data-field="qoo"><p class="proj-head"><span class="proj-name">에센시엘 ESSENCIEL</span><span class="st st-active">진행 중</span></p><p class="proj-desc">큐텐 대행·마케팅. 런칭 2개월 만에 큐텐 탑페이지 실시간 1위, 뷰티 종합 4위 <a href="#case-essenciel">사례 보기</a></p><p class="proj-meta">큐텐 운영 · 큐텐/이커머스</p></li>
+      <li class="proj" data-status="active" data-field="qoo"><p class="proj-head"><span class="proj-name">ZIGTAG</span><span class="st st-active">진행 중</span></p><p class="proj-desc">큐텐 운영 대행, 메가와리 리포트와 개선안 <a href="#case-zigtag">사례 보기</a></p><p class="proj-meta">큐텐 운영 · 큐텐/이커머스</p></li>
+      <li class="proj" data-status="active" data-field="qoo"><p class="proj-head"><span class="proj-name">JS 에오샴푸</span><span class="st st-active">진행 중</span></p><p class="proj-desc">큐텐 상품 등록(단품 3종·세트 1종), 상세페이지 번역·현지화, 6개월 기본 세팅 (2025년 5~6월)</p><p class="proj-meta">큐텐 운영 · 큐텐/이커머스</p></li>
+      <li class="proj" data-status="active" data-field="qoo"><p class="proj-head"><span class="proj-name">수소로 SUSORO</span><span class="st st-active">진행 중</span></p><p class="proj-desc">큐텐 운영</p><p class="proj-meta">큐텐 운영 · 큐텐/이커머스</p></li>
+      <li class="proj" data-status="active" data-field="etc"><p class="proj-head"><span class="proj-name">일본 아마존·큐텐 검색광고 세팅</span><span class="st st-active">진행 중</span></p><p class="proj-desc">검색광고 운영 방식(대행 vs 인하우스) 검토</p><p class="proj-meta">내부 효율화 · 기타</p></li>
+      <li class="proj" data-status="active" data-field="sns"><p class="proj-head"><span class="proj-name">플로위 FLOWY</span><span class="st st-active">진행 중</span></p><p class="proj-desc">마케팅 제안, 트위터 운영과 인스타그램 시딩 세팅 (큐텐 운영은 클라이언트 자체 진행)</p><p class="proj-meta">큐텐·마케팅 · 인플루언서/SNS</p></li>
       <li class="proj" data-status="active" data-field="dist"><p class="proj-head"><span class="proj-name">유닉스 TAKE OUT</span><span class="st st-active">진행 중</span></p><p class="proj-desc">돈키호테 400개 지점 유통과 인플루언서 마케팅 <a href="#case-unix">사례 보기</a></p><p class="proj-meta">미용가전 유통 · 유통</p></li>
       <li class="proj" data-status="active" data-field="dist"><p class="proj-head"><span class="proj-name">유닉스 × BLEACH</span><span class="st st-active">진행 중</span></p><p class="proj-desc">UNIX 미용가전을 일본 거래처(BLEACH)에 공급하기 위한 다자간 계약 구조 설계와 계약 서류 정리 (2025년 4월)</p><p class="proj-meta">미용가전 유통 · 유통</p></li>
       <li class="proj" data-status="active" data-field="dist"><p class="proj-head"><span class="proj-name">플러스에어 PLUSAIR</span><span class="st st-active">진행 중</span></p><p class="proj-desc">드라이어·환풍기 등 샘플과 제안서 준비, 돈키호테 테스트 판매(500개 예정) 자료 준비 (2025년 3~5월)</p><p class="proj-meta">미용가전 유통 · 유통</p></li>
@@ -598,129 +888,72 @@
       <li class="proj" data-status="active" data-field="clinic"><p class="proj-head"><span class="proj-name">디온의원</span><span class="st st-active">진행 중</span></p><p class="proj-desc">병원 마케팅</p><p class="proj-meta">병원 마케팅 · 병의원</p></li>
       <li class="proj" data-status="active" data-field="etc"><p class="proj-head"><span class="proj-name">AGON AGENCY</span><span class="st st-active">진행 중</span></p><p class="proj-desc">일본 대상 모델·인플루언서 에이전시 리브랜딩과 모델 모집 <a href="#case-agency">사례 보기</a></p><p class="proj-meta">모델 에이전시 · 기타</p></li>
       <li class="proj" data-status="active" data-field="etc"><p class="proj-head"><span class="proj-name">글루타치온 필름 신규 브랜드</span><span class="st st-active">진행 중</span></p><p class="proj-desc">신규 브랜드 '(가)Dr.H' 기획</p><p class="proj-meta">화장품 기획 · 기타</p></li>
+    
     </ul>
     <p class="empty" id="proj-empty" hidden>조건에 맞는 프로젝트가 없습니다.</p>
   </div>
 </section>
 
-<!-- 하는 일 -->
-<section class="section about" id="about" aria-labelledby="about-title">
+<!-- 8. 노하우 -->
+<section class="section" id="knowhow" aria-labelledby="knowhow-title">
   <div class="wrap">
-    <div class="about-top">
-      <div class="reveal">
-        <h2 id="about-title">AGON이 하는 일</h2>
-        <p class="about-lead">일본 진출 대행사는 보통 초기 마케팅, PR·팝업, 이커머스, 대규모 유통 중 한 영역에 집중합니다. AGON은 <strong>중장기 마케팅과 소규모~대규모 유통을 한 팀에서</strong> 맡습니다. 실무는 10년차 일본인 마케터를 중심으로 시장조사·기획·집행을 진행합니다.</p>
-        <p class="source">출처: 회사소개서 p.2~4</p>
-      </div>
-      <figure class="reveal">
-        <button type="button" class="zoom" data-full="assets/01-positioning.jpg"><img src="assets/01-positioning.jpg" alt="대행사별 포지션 비교: 초기 마케팅사, PR·팝업 운영사, 이커머스 전개사, 벤더사와 AGON의 위치" width="1920" height="1080" loading="lazy"></button>
-      </figure>
-    </div>
-
-    <div class="scope-grid">
-      <div class="scope-col reveal">
-        <h3>마케팅</h3>
-        <p>인플루언서 마케팅, 큐텐 운영 대행, 병의원 마케팅, 일본 시딩, 트위터 운영 대행, 잡지·매체 PR, 일본 현지 팝업스토어, 일본 진출 아티스트</p>
-      </div>
-      <div class="scope-col reveal">
-        <h3>1차 유통</h3>
-        <p>일본 진출 브랜드사 소싱, 한국 M&amp;A 대상 브랜드 소싱, 일본 유통 대행(패키지 번역, 법률 검토 등), 돈키호테 PB 협력사, OEM/ODM</p>
-      </div>
-      <div class="scope-col reveal">
-        <h3>2차 유통</h3>
-        <p>일본 유통 대리점 영업, 총판</p>
-      </div>
-      <div class="scope-col reveal">
-        <h3>국내 마케팅</h3>
-        <p>올리브영·무신사·쿠팡·네이버·G마켓 리뷰 체험단, 네이버 검색광고·메타광고, AGON AGENCY 모델 섭외, 인플루언서 마케팅</p>
-      </div>
-    </div>
-
-    <h3 class="about-sub reveal">일본 마케팅 3단계</h3>
-    <ol class="steps">
-      <li class="step reveal">
-        <button type="button" class="zoom" data-full="assets/03-qrit-basic-marketing.jpg"><img src="assets/03-qrit-basic-marketing.jpg" alt="기본 마케팅 QRIT" width="1920" height="1080" loading="lazy"></button>
-        <h4>기본 마케팅: QRIT</h4>
-        <p>Qoo10 입점·운영, Review 캠페인(일본인 베스트 리뷰어 직접 컨택), Instagram 공식 계정 운영·시딩, Twitter 나노 인플루언서 마케팅</p>
-      </li>
-      <li class="step reveal">
-        <button type="button" class="zoom" data-full="assets/04-adaptive-marketing.jpg"><img src="assets/04-adaptive-marketing.jpg" alt="적응 마케팅" width="1920" height="1080" loading="lazy"></button>
-        <h4>적응 마케팅</h4>
-        <p>자체 DB로 5만 팔로워 이상~메가급 인플루언서 섭외, 인플루언서 콜라보 공동구매, 일본 블로그 마케팅(SEO), 유튜브 마케팅</p>
-      </li>
-      <li class="step reveal">
-        <button type="button" class="zoom" data-full="assets/05-advanced-marketing.jpg"><img src="assets/05-advanced-marketing.jpg" alt="심화 마케팅" width="1920" height="1080" loading="lazy"></button>
-        <h4>심화 마케팅</h4>
-        <p>일본 매거진·매체 PR(연예인 콜라보 연계), 현지 팝업스토어, K-POP 페스티벌 부스</p>
-      </li>
-    </ol>
-
-    <div class="howto">
-      <div class="reveal">
-        <h3 class="about-sub">큐텐 운영 대행에서 하는 일</h3>
-        <dl class="def-list">
-          <div><dt>상품·페이지</dt><dd>상품 마스터 등록, 상세페이지 검수와 일본 약사법 검토, 키워드·SEO 최적화</dd></div>
-          <div><dt>운영</dt><dd>경쟁사 분석, 옵션·재고·노출 모니터링, 프로모션·기획전 대응, SNS 연계 콘텐츠</dd></div>
-          <div><dt>고객·물류</dt><dd>CS·리뷰 대응, 클레임·반품·교환, 수출입·통관, 물류대행사 연동과 재고 관리</dd></div>
-          <div><dt>브랜드사 소통</dt><dd>큐텐 MD 커뮤니케이션, 정기 미팅, 일본 트렌드·시장 정보 공유</dd></div>
-        </dl>
-      </div>
-      <div class="reveal">
-        <h3 class="about-sub">쌓아 둔 매뉴얼</h3>
-        <dl class="def-list">
-          <div><dt>행정·무역</dt><dd>제안·문의 메일 템플릿, 인보이스 작성법, EMS 발송, 3자 계약 매뉴얼</dd></div>
-          <div><dt>일본 유통</dt><dd>일본 유통 조건과 개념, 가전제품 PSE 인증, 쿠팡 입점 절차</dd></div>
-          <div><dt>마케팅</dt><dd>일본 인플루언서 마케팅, 트위터 운영 대행, 큐텐 공략 매뉴얼, 인플루언서 리스트</dd></div>
-        </dl>
-      </div>
-    </div>
+    <p class="eyebrow">Know-how</p>
+    <h2 id="knowhow-title">쌓아 둔 매뉴얼</h2>
+    <p>반복되는 업무를 매뉴얼로 만들어 두었습니다.</p>
+    <dl class="manual">
+      <div><dt>행정·무역</dt><dd>제안·문의 메일 템플릿, 인보이스 작성법, EMS 발송, 3자 계약 매뉴얼</dd></div>
+      <div><dt>일본 유통</dt><dd>일본 유통 조건과 개념, 가전제품 PSE 인증, 쿠팡 입점 절차</dd></div>
+      <div><dt>마케팅</dt><dd>일본 인플루언서 마케팅, 트위터 운영 대행, 큐텐 공략 매뉴얼, 인플루언서 리스트</dd></div>
+    </dl>
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="section faq-section" id="faq" aria-labelledby="faq-title">
-  <div class="wrap faq-grid">
-    <h2 id="faq-title" class="reveal">자주 받는 질문</h2>
+<!-- 9. FAQ -->
+<section class="section alt" id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <p class="eyebrow">FAQ</p>
+    <h2 id="faq-title">자주 받는 질문</h2>
     <div class="faq">
-      <div class="faq-item reveal">
+      <div class="faq-item">
         <h3><button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-1">대표 프로젝트 하나만 꼽으면?</button></h3>
         <div class="faq-a" id="faq-1"><p>JOVS입니다. 오프라인 입점을 늘려 2년 만에 유통금액을 600% 키웠고, 온라인 점유율도 TOP10 밖에서 1위로 올렸습니다. <a href="#case-jovs">사례 보기</a></p></div>
       </div>
-      <div class="faq-item reveal">
+      <div class="faq-item">
         <h3><button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-2">유통도 직접 해봤어요?</button></h3>
         <div class="faq-a" id="faq-2"><p>UNIX TAKEOUT을 돈키호테 400개 지점에 넣었습니다(초도 매입 4만 개). 패키지 번역부터 물류까지 맡았습니다. <a href="#case-unix">사례 보기</a></p></div>
       </div>
-      <div class="faq-item reveal">
+      <div class="faq-item">
         <h3><button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-3">큐텐은 어느 정도 해봤어요?</button></h3>
-        <div class="faq-a" id="faq-3"><p>ESSENCIEL은 런칭 2개월 만에 큐텐 탑페이지 실시간 1위·뷰티 종합 4위, CELLOLOGY는 미용기기 카테고리 1위, Wooliliwoo는 첫 메가와리 1,500개 완판과 뷰티 종합 14위를 기록했습니다. ZIGTAG는 메가와리 데이터를 분석해 개선안을 냈습니다. <a href="#cat-qoo">사례 보기</a></p></div>
+        <div class="faq-a" id="faq-3"><p>ESSENCIEL은 런칭 2개월 만에 큐텐 탑페이지 실시간 1위·뷰티 종합 4위, CELLOLOGY는 미용기기 카테고리 1위, Wooliliwoo는 첫 메가와리 1,500개 완판과 뷰티 종합 14위를 기록했습니다. ZIGTAG는 메가와리 데이터를 분석해 개선안을 냈습니다. <a href="#cat-b">사례 보기</a></p></div>
       </div>
-      <div class="faq-item reveal">
+      <div class="faq-item">
         <h3><button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-4">인플루언서 마케팅 성과는?</button></h3>
-        <div class="faq-a" id="faq-4"><p>Dinto 콜라보로 2일 만에 매출 4,300만 원, NOT4U는 매체만으로 조회 41만 회를 냈습니다. 한국·일본·베트남·러시아 크리에이터 38명이 있는 하이퍼즈 유니버스도 함께 운영했습니다. <a href="#cat-sns">사례 보기</a></p></div>
+        <div class="faq-a" id="faq-4"><p>Dinto 콜라보로 2일 만에 매출 4,300만 원, NOT4U는 매체만으로 조회 41만 회를 냈습니다. 한국·일본·베트남·러시아 크리에이터 38명이 있는 하이퍼즈 유니버스도 함께 운영했습니다. <a href="#cat-c">사례 보기</a></p></div>
       </div>
-      <div class="faq-item reveal">
+      <div class="faq-item">
         <h3><button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-5">오프라인 행사는?</button></h3>
-        <div class="faq-a" id="faq-5"><p>KCON 2024 INTOU 부스(8,000명 이상 방문)와 성수 팝업스토어(APLOM, SKIM)를 운영했습니다. <a href="#cat-pr">사례 보기</a></p></div>
+        <div class="faq-a" id="faq-5"><p>KCON 2024 INTOU 부스(8,000명 이상 방문)와 성수 팝업스토어(APLOM, SKIM)를 운영했습니다. <a href="#cat-d">사례 보기</a></p></div>
       </div>
-      <div class="faq-item reveal">
+      <div class="faq-item">
         <h3><button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-6">한국 시장 마케팅도 하나요?</button></h3>
-        <div class="faq-a" id="faq-6"><p>네. 리뷰 체험단, 검색·메타광고, 모델 섭외와 인플루언서 마케팅을 합니다. UNIX TAKEOUT 공식 모델 촬영과 MUSINSA·서울특별시 인플루언서 캠페인이 있습니다. <a href="#cat-kr">사례 보기</a></p></div>
+        <div class="faq-a" id="faq-6"><p>네. 리뷰 체험단, 검색·메타광고, 모델 섭외와 인플루언서 마케팅을 합니다. UNIX TAKEOUT 공식 모델 촬영과 MUSINSA·서울특별시 인플루언서 캠페인이 있습니다. <a href="#cat-e">사례 보기</a></p></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 용어 -->
-<section class="section glossary-section" id="glossary" aria-labelledby="glossary-title">
+<!-- 10. 용어 정리 -->
+<section class="section" id="glossary" aria-labelledby="glossary-title">
   <div class="wrap">
-    <h2 id="glossary-title" class="reveal">용어 정리</h2>
+    <p class="eyebrow">Glossary</p>
+    <h2 id="glossary-title">용어 정리</h2>
     <dl class="glossary">
-      <div class="reveal"><dt>큐텐(Qoo10)</dt><dd>일본의 대표 오픈마켓. K-뷰티 판매 비중이 큽니다.</dd></div>
-      <div class="reveal"><dt>메가와리(メガ割)</dt><dd>큐텐이 1년에 몇 차례 여는 대형 할인 행사입니다.</dd></div>
-      <div class="reveal"><dt>메가데뷔</dt><dd>큐텐의 신규 브랜드 데뷔 프로모션입니다.</dd></div>
-      <div class="reveal"><dt>돈키호테 / LOFT / PLAZA</dt><dd>일본의 대형 버라이어티 잡화점 체인입니다.</dd></div>
-      <div class="reveal"><dt>시딩(Seeding)</dt><dd>인플루언서·리뷰어에게 제품을 보내 자연스러운 후기를 만드는 마케팅입니다.</dd></div>
-      <div class="reveal"><dt>ROAS / CPC / CPR</dt><dd>광고비 대비 매출 / 클릭당 비용 / 도달당 비용입니다.</dd></div>
+      <div><dt>큐텐(Qoo10)</dt><dd>일본의 대표 오픈마켓. K-뷰티 판매 비중이 큽니다.</dd></div>
+      <div><dt>메가와리(メガ割)</dt><dd>큐텐이 1년에 몇 차례 여는 대형 할인 행사입니다.</dd></div>
+      <div><dt>메가데뷔</dt><dd>큐텐의 신규 브랜드 데뷔 프로모션입니다.</dd></div>
+      <div><dt>돈키호테 / LOFT / PLAZA</dt><dd>일본의 대형 버라이어티 잡화점 체인입니다.</dd></div>
+      <div><dt>시딩(Seeding)</dt><dd>인플루언서·리뷰어에게 제품을 보내 자연스러운 후기를 만드는 마케팅입니다.</dd></div>
+      <div><dt>ROAS / CPC / CPR</dt><dd>광고비 대비 매출 / 클릭당 비용 / 도달당 비용입니다.</dd></div>
     </dl>
   </div>
 </section>
@@ -729,8 +962,7 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="footer-name">AGON Corp.</p>
-    <p class="footer-main">프로젝트 레퍼런스</p>
+    <p class="footer-main">AGON Corp. · 프로젝트 레퍼런스</p>
     <p class="footer-src">근거 자료: AGON Corp. 회사소개서(2025) · 국내 마케팅 제안서(2025) · 하이퍼즈 유니버스 크리에이터 소개서(25.10) · 노션 업무 기록</p>
   </div>
 </footer>
