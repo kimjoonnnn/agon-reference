@@ -586,3 +586,6 @@ main { padding-top: var(--header-h); }
   .case-modal { width: calc(100vw - 16px); max-height: calc(100vh - 16px); }
   .cm-body { padding: 20px 16px 24px; }
 }
+
+/* Anything marked hidden stays hidden, even if a rule above sets display. */
+[hidden] { display: none !important; }
